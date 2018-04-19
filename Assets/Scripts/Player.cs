@@ -17,6 +17,8 @@ public class Player : MonoBehaviour
     private Vector3 moveVector;
     private Vector3 lastMove;
 
+    private bool wallJumped = false;
+
     // Use this for initialization
     void Start()
     {
@@ -33,6 +35,7 @@ public class Player : MonoBehaviour
         if (controller.isGrounded)
         {
             verticalVelocity = -1;
+            wallJumped = false;
 
             if (Input.GetKeyDown(KeyCode.Space))
             {
@@ -40,11 +43,17 @@ public class Player : MonoBehaviour
             }
         }
 
+        else if (wallJumped == true)
+        {
+            moveVector = lastMove;
+            verticalVelocity -= Gravity * Time.deltaTime;
+        }
+
         else
         {
             verticalVelocity -= Gravity * Time.deltaTime;
-            moveVector = lastMove;
         }
+
 
         moveVector.y = 0;
         moveVector.Normalize();
@@ -80,6 +89,7 @@ public class Player : MonoBehaviour
                 verticalVelocity = jumpForce;
                 moveVector = hit.normal * speed;
                 rot = Quaternion.LookRotation(hit.normal);
+                wallJumped = true;
             }
         }
 
