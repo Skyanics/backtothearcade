@@ -274,6 +274,27 @@
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
       <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/2015/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
+    <Reference Include="ProBuilderCore-Unity5">
+      <HintPath>Assets/ProCore/ProBuilder/Classes/ProBuilderCore-Unity5.dll</HintPath>
+    </Reference>
+    <Reference Include="ProBuilderMeshOps-Unity5">
+      <HintPath>Assets/ProCore/ProBuilder/Classes/ProBuilderMeshOps-Unity5.dll</HintPath>
+    </Reference>
+    <Reference Include="KdTreeLib">
+      <HintPath>Assets/ProCore/ProBuilder/Classes/ClassesLib/KdTreeLib.dll</HintPath>
+    </Reference>
+    <Reference Include="pb_Stl">
+      <HintPath>Assets/ProCore/ProBuilder/Classes/ClassesLib/pb_Stl.dll</HintPath>
+    </Reference>
+    <Reference Include="Poly2Tri">
+      <HintPath>Assets/ProCore/ProBuilder/Classes/ClassesLib/Poly2Tri.dll</HintPath>
+    </Reference>
+    <Reference Include="ProBuilderEditor-Unity5">
+      <HintPath>Assets/ProCore/ProBuilder/Editor/ProBuilderEditor-Unity5.dll</HintPath>
+    </Reference>
+    <Reference Include="ShaderForge">
+      <HintPath>Assets/ShaderForge/Editor/ShaderForge.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine.Advertisements">
       <HintPath>C:/Users/Skyanics/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.ads@2.0.3/UnityEngine.Advertisements.dll</HintPath>
     </Reference>
@@ -294,27 +315,6 @@
     </Reference>
     <Reference Include="UnityEngine.StandardEvents">
       <HintPath>C:/Users/Skyanics/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.10/UnityEngine.StandardEvents.dll</HintPath>
-    </Reference>
-    <Reference Include="ShaderForge">
-      <HintPath>Assets/ShaderForge/Editor/ShaderForge.dll</HintPath>
-    </Reference>
-    <Reference Include="ProBuilderCore-Unity5">
-      <HintPath>Assets/ProCore/ProBuilder/Classes/ProBuilderCore-Unity5.dll</HintPath>
-    </Reference>
-    <Reference Include="pb_Stl">
-      <HintPath>Assets/ProCore/ProBuilder/Classes/ClassesLib/pb_Stl.dll</HintPath>
-    </Reference>
-    <Reference Include="Poly2Tri">
-      <HintPath>Assets/ProCore/ProBuilder/Classes/ClassesLib/Poly2Tri.dll</HintPath>
-    </Reference>
-    <Reference Include="ProBuilderEditor-Unity5">
-      <HintPath>Assets/ProCore/ProBuilder/Editor/ProBuilderEditor-Unity5.dll</HintPath>
-    </Reference>
-    <Reference Include="ProBuilderMeshOps-Unity5">
-      <HintPath>Assets/ProCore/ProBuilder/Classes/ProBuilderMeshOps-Unity5.dll</HintPath>
-    </Reference>
-    <Reference Include="KdTreeLib">
-      <HintPath>Assets/ProCore/ProBuilder/Classes/ClassesLib/KdTreeLib.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
       <HintPath>D:/Program Files (x86)/Editor/Data/PlaybackEngines/iOSSupport\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
@@ -722,6 +722,8 @@
     <None Include="Assets\ShaderForge\Example Assets\Shaders\VertexAnimation.shader" />
     <None Include="Assets\ShaderForge\Example Assets\Shaders\VertexColorRounding.shader" />
     <None Include="Assets\ShaderForge\Readme.txt" />
+    <None Include="Assets\Shaders\Interaction.shader" />
+    <None Include="Assets\Shaders\LightZodiac.shader" />
     <None Include="Assets\Shaders\butterfly.shader" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

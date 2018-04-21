@@ -28,6 +28,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - _ColorFresnel: 1.336
+    - _EmissionValue: 6
     - _Glossiness: 0
     - _NormalBlendStrength: 0.147
     - _UVScale: 1
