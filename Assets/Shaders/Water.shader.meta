@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 0694f385d343693449ff1b83bd36d90a
+timeCreated: 1524337392
+licenseType: Free
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures:
+  - _MainTex: {fileID: 2800000, guid: 92bbbdcf09d5f114f8fa0a3ada6d060d, type: 3}
+  - _node_4606: {fileID: 2800000, guid: 20ec534b13d029d4098e2b8d996ef03d, type: 3}
+  - _Whiteness: {fileID: 2800000, guid: 28c7aad1372ff114b90d330f8a2dd938, type: 3}
+  - _RefractionTexture: {fileID: 2800000, guid: 92bbbdcf09d5f114f8fa0a3ada6d060d,
+      type: 3}
+  - _node_798: {fileID: 2800000, guid: 28c7aad1372ff114b90d330f8a2dd938, type: 3}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

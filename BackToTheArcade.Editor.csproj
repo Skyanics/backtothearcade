@@ -724,6 +724,7 @@
     <None Include="Assets\ShaderForge\Readme.txt" />
     <None Include="Assets\Shaders\Interaction.shader" />
     <None Include="Assets\Shaders\LightZodiac.shader" />
+    <None Include="Assets\Shaders\Water.shader" />
     <None Include="Assets\Shaders\butterfly.shader" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
