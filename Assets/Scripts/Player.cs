@@ -17,6 +17,8 @@ public class Player : MonoBehaviour
     private Vector3 moveVector;
     private Vector3 lastMove;
 
+    public Animator anim;
+
     private bool wallJumped = false;
 
     // Use this for initialization
@@ -32,14 +34,36 @@ public class Player : MonoBehaviour
         moveVector = Vector3.zero;
         moveVector.x = Input.GetAxis("Horizontal") * speed;
 
+        if (Input.GetKey(KeyCode.A) || (Input.GetKey(KeyCode.D)))
+        {
+            anim.SetBool("isRunning", true);
+        }
+
+        else {
+            anim.SetBool("isRunning", false);
+        }
+
+        if (Input.GetKey(KeyCode.M))
+        {
+            anim.SetBool("isDancing", true);
+        }
+
+        else
+        {
+            anim.SetBool("isDancing", false);
+        }
+
         if (controller.isGrounded)
         {
             verticalVelocity = -1;
             wallJumped = false;
+            anim.SetBool("isJumping", false);
+
 
             if (Input.GetKeyDown(KeyCode.Space))
             {
                 verticalVelocity = jumpForce;
+                anim.SetBool("isJumping", true);
             }
         }
 
