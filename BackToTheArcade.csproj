@@ -444,6 +444,10 @@
     <Compile Include="Assets\Scripts\InteractionObjectScript.cs" />
     <Compile Include="Assets\Scripts\LoadingScreen.cs" />
     <Compile Include="Assets\Scripts\Player.cs" />
+    <Compile Include="Assets\Scripts\PlayerStatsMono.cs" />
+    <Compile Include="Assets\Scripts\SaveData.cs" />
+    <Compile Include="Assets\Scripts\SaveDataManager.cs" />
+    <Compile Include="Assets\Scripts\SaveDataPoint.cs" />
     <Compile Include="Assets\ShaderForge\Example Assets\Scripts\EditorLabel.cs" />
     <Compile Include="Assets\ShaderForge\Example Assets\Scripts\EnableCameraDepthInForward.cs" />
     <Compile Include="Assets\ShaderForge\Example Assets\Scripts\SoftNormalsToVertexColor.cs" />

@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-
-    private Rigidbody rig;
     private CharacterController controller;
     public float speed = 5.0f;
     private float verticalVelocity;
@@ -24,13 +22,13 @@ public class Player : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        rig = GetComponent<Rigidbody>();
         controller = GetComponent<CharacterController>();
     }
 
     // Update is called once per frame
     void Update()
     {
+       
         moveVector = Vector3.zero;
         moveVector.x = Input.GetAxis("Horizontal") * speed;
 
@@ -100,6 +98,11 @@ public class Player : MonoBehaviour
         if (!isPulling)
         {
             transform.rotation = Quaternion.Slerp(transform.rotation, rot, speed * Time.deltaTime);
+        }
+
+        if (transform.position.z != -6.9)
+        {
+            transform.position = new Vector3(transform.position.x, transform.position.y, -6.9f);
         }
     }
 

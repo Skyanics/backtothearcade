@@ -98,7 +98,7 @@ public class EnemyAI : MonoBehaviour
         if (Vector3.Distance(transform.position, player.position) <= MaxChaseDist && Vector3.Distance(transform.position, player.position) >= MinDist)
         {
             agent.destination = player.transform.position;
-            Debug.Log(Vector3.Distance(transform.position, player.position));
+            //Debug.Log(Vector3.Distance(transform.position, player.position));
             transform.LookAt(new Vector3(agent.destination.x, transform.position.y, agent.destination.z));
 
         }
