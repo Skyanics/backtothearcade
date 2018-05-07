@@ -451,6 +451,7 @@
     <Compile Include="Assets\ShaderForge\Example Assets\Scripts\EditorLabel.cs" />
     <Compile Include="Assets\ShaderForge\Example Assets\Scripts\EnableCameraDepthInForward.cs" />
     <Compile Include="Assets\ShaderForge\Example Assets\Scripts\SoftNormalsToVertexColor.cs" />
+    <Compile Include="Assets\StartingLight.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Aura\Editor\Shaders\ColorFieldDrawerShader.shader" />

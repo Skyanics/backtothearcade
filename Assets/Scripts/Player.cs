@@ -10,6 +10,7 @@ public class Player : MonoBehaviour
     public float Gravity;
     public float jumpForce = 10.0f;
     public bool isPulling;
+    public ParticleSystem atkParticle;
 
     private Quaternion rot;
     private Vector3 moveVector;
@@ -41,14 +42,25 @@ public class Player : MonoBehaviour
             anim.SetBool("isRunning", false);
         }
 
-        if (Input.GetKey(KeyCode.M))
+        if (Input.GetKey(KeyCode.E))
         {
-            anim.SetBool("isDancing", true);
+            anim.SetBool("isPushing", true);
         }
 
         else
         {
-            anim.SetBool("isDancing", false);
+            anim.SetBool("isPushing", false);
+        }
+
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            anim.SetBool("isAttacking", true);
+            atkParticle.Play();
+        }
+
+        else
+        {
+            anim.SetBool("isAttacking", false);
         }
 
         if (controller.isGrounded)
@@ -56,12 +68,14 @@ public class Player : MonoBehaviour
             verticalVelocity = -1;
             wallJumped = false;
             anim.SetBool("isJumping", false);
+            anim.SetBool("isGrounded", true);
 
 
             if (Input.GetKeyDown(KeyCode.Space))
             {
-                verticalVelocity = jumpForce;
+                anim.SetBool("isGrounded", false);
                 anim.SetBool("isJumping", true);
+                verticalVelocity = jumpForce;
             }
         }
 
@@ -76,7 +90,6 @@ public class Player : MonoBehaviour
             verticalVelocity -= Gravity * Time.deltaTime;
         }
 
-
         moveVector.y = 0;
         moveVector.Normalize();
         moveVector *= speed;
@@ -85,9 +98,24 @@ public class Player : MonoBehaviour
         controller.Move(moveVector * Time.deltaTime);
         lastMove = moveVector;
 
+        var partrot = atkParticle.rotationOverLifetime;
+        partrot.z = 0;
+
+        if (rot == Quaternion.LookRotation(Vector3.left))
+        {
+            partrot.z = 15;
+        }
+
+        else
+        {
+            partrot.z = -15;
+        }
+
         if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
         {
             rot = Quaternion.LookRotation(Vector3.left);
+            
+            
         }
 
         if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
