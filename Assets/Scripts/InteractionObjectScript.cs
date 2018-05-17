@@ -19,7 +19,7 @@ public class InteractionObjectScript : MonoBehaviour {
             if (Input.GetKey(KeyCode.E))
             {
                 transform.SetParent(player.transform);
-                player.GetComponent<Player>().speed = 1.0f;
+                player.GetComponent<Player>().speed = Vector2.one;
                 player.GetComponent<Player>().jumpForce = 0.0f;
                 player.GetComponent<Player>().isPulling = true;
                 GetComponent<Rigidbody>().isKinematic = true;
@@ -31,7 +31,7 @@ public class InteractionObjectScript : MonoBehaviour {
             else
             {
                 transform.SetParent(null);
-                player.GetComponent<Player>().speed = 5.0f;
+                player.GetComponent<Player>().speed = Vector2.one * 5.0f;
                 player.GetComponent<Player>().jumpForce = 10.0f;
                 GetComponent<Rigidbody>().isKinematic = false;
                 player.GetComponent<Player>().isPulling = false;

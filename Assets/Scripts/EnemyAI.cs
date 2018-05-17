@@ -121,7 +121,7 @@ public class EnemyAI : MonoBehaviour
 
         if (Vector3.Distance(transform.position, player.position) <= MaxAttackDist && Vector3.Distance(transform.position, player.position) >= MinDist)
         {
-            Debug.Log("Attacked");
+            //Debug.Log("Attacked");
             if (isAttacking == false)
             {
                 //StartCoroutine(Attack());
