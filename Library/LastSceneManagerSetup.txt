@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Facebookanim/FacebookHeaderScene.unity
+- path: Assets/prototype.unity
   isLoaded: 1
   isActive: 1

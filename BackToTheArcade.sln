@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2015
+# Visual Studio 2017
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BackToTheArcade", "BackToTheArcade.csproj", "{3FCB7689-8FCD-5D5F-30EB-FFEACFE205E1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BackToTheArcade.Plugins", "BackToTheArcade.Plugins.csproj", "{C78C52C4-F5C2-D5A7-9F60-1BFB1AAD4D43}"
