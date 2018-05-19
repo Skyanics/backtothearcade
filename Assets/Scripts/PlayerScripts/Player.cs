@@ -31,7 +31,8 @@ public class Player : MonoBehaviour
 
     void PlayerAttack()
     {
-        Ray ray = new Ray(transform.position, Vector3.left);
+        Vector3 forward = transform.TransformDirection(Vector3.forward) * 10;
+        Ray ray = new Ray(transform.position, forward);
         RaycastHit hit;
 
         if (Physics.Raycast(ray, out hit, maxRayDistance))
