@@ -18,12 +18,30 @@ public class Player : MonoBehaviour
 
     public Animator anim;
 
+    public float maxRayDistance = 5f;
+    public float playerDamage = 20f;
+
     private bool wallJumped = false;
 
     // Use this for initialization
     void Start()
     {
         controller = GetComponent<CharacterController>();
+    }
+
+    void PlayerAttack()
+    {
+        Ray ray = new Ray(transform.position, Vector3.left);
+        RaycastHit hit;
+
+        if (Physics.Raycast(ray, out hit, maxRayDistance))
+        {
+            if (hit.transform.tag == "Enemy")
+            {
+                Debug.DrawRay(transform.position, Vector3.left, Color.red);
+                hit.transform.GetComponent<EnemyAI>().enemycurrentHealth -= playerDamage;
+            }
+        }
     }
 
     // Update is called once per frame
@@ -56,6 +74,8 @@ public class Player : MonoBehaviour
         {
             anim.SetBool("isAttacking", true);
             atkParticle.Play();
+            PlayerAttack();
+  
         }
 
         else

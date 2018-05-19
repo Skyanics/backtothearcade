@@ -47,5 +47,10 @@ public class PlayerStatsMono : MonoBehaviour {
             pickUpHealth = true;
         }
 
+        if (curHealth <= 0)
+        {
+            Debug.Log("rip");
+        }
+
 	}
 }

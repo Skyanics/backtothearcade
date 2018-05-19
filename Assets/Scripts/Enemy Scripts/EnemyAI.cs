@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.UI;
 
 public class EnemyAI : MonoBehaviour
 {
@@ -11,8 +12,9 @@ public class EnemyAI : MonoBehaviour
 
     //enemyVariables
     [SerializeField]
-    private int enemyHealth;
-    public int enemycurrentHealth;
+    private float enemyHealth;
+    public float enemycurrentHealth;
+    public Image healthbar;
     public int enemyAtk;
     [SerializeField]
     private string name;
@@ -36,10 +38,14 @@ public class EnemyAI : MonoBehaviour
     //public TextMesh healthBar;
 
     //Player Script
-    //public PlayerStats playerStats;
+    public PlayerStatsMono playerStats;
     public bool isAttacking;
 
-
+    //raycasting
+    public float maxRayDistance = 25;
+    [SerializeField]
+    private bool playerSighted = false;
+    public Vector3 curDirection;
 
 
     // Use this for initialization
@@ -57,24 +63,24 @@ public class EnemyAI : MonoBehaviour
         {
             enemyHealth = 100;
             enemycurrentHealth = 100;
-            enemyAtk = 25;
+            enemyAtk = 15;
             MaxChaseDist = 10;
             MaxAttackDist = 6;
             MinDist = 5;
             name = "Rat Knight";
-           // enemyMesh.transform.GetChild(1).gameObject.SetActive(true);
+            // enemyMesh.transform.GetChild(1).gameObject.SetActive(true);
         }
 
         if (isHeavy == true)
         {
             enemyHealth = 150;
             enemycurrentHealth = 150;
-            enemyAtk = 35;
+            enemyAtk = 20;
             MaxChaseDist = 10;
             MaxAttackDist = 6;
             MinDist = 5;
             name = "Rat Brute";
-          //  enemyMesh.transform.GetChild(0).gameObject.SetActive(true);
+            //  enemyMesh.transform.GetChild(0).gameObject.SetActive(true);
         }
     }
 
@@ -88,12 +94,36 @@ public class EnemyAI : MonoBehaviour
         destPoint = (destPoint + 1) % points.Length;
     }
 
+    void FixedUpdate()
+    {
+        Vector3 forward = transform.TransformDirection(Vector3.forward) * 10;
+        Ray ray = new Ray(transform.position, forward);
+        RaycastHit hit;
+        
+
+        if (Physics.Raycast(ray, out hit, maxRayDistance))
+        {
+            Debug.DrawRay(transform.position, forward, Color.red);
+            if (hit.transform.tag == "Player")
+            {
+                playerSighted = true;
+            }
+
+            else
+            {
+                playerSighted = false;
+            }
+        }
+    }
+
     // Update is called once per frame
     void Update()
     {
 
-        string text = name + " " + enemycurrentHealth.ToString() + " / " + enemyHealth.ToString();
-        // healthBar.text = text;
+        //string text = name;
+        //healthBar.text = text;
+
+        healthbar.fillAmount = enemycurrentHealth / enemyHealth;
 
         if (Vector3.Distance(transform.position, player.position) <= MaxChaseDist && Vector3.Distance(transform.position, player.position) >= MinDist)
         {
@@ -121,10 +151,14 @@ public class EnemyAI : MonoBehaviour
 
         if (Vector3.Distance(transform.position, player.position) <= MaxAttackDist && Vector3.Distance(transform.position, player.position) >= MinDist)
         {
-            Debug.Log("Attacked");
-            if (isAttacking == false)
+           // Debug.Log("Attacked");
+            if (isAttacking == false && playerSighted == true)
             {
-                //StartCoroutine(Attack());
+                StartCoroutine(Attack());
+            }
+            else
+            {
+                StopCoroutine(Attack());
             }
         }
 
@@ -145,23 +179,22 @@ public class EnemyAI : MonoBehaviour
 
         }
 
-       // if (isAttacking)
-            //playerStats.underAttack = true;
-    //}
-
-    //IEnumerator Attack()
-   // {
-        //while (playerStats.playercurrentHealth > 0 && Vector3.Distance(transform.position, player.position) <= MaxAttackDist)
-       // {
-       //     isAttacking = true;
-        //    playerStats.playercurrentHealth -= enemyAtk;
-       //     playerStats.healthBar.fillAmount -= (float)enemyAtk / 100;
-            //yield return new WaitForSeconds(2);
-
-      //  }
-
-
-
     }
 
-}
+        IEnumerator Attack()
+        {
+            while (playerStats.curHealth > 0 && Vector3.Distance(transform.position, player.position) <= MaxAttackDist)
+            {
+            Debug.Log("attack");
+                isAttacking = true;
+                playerStats.curHealth -= enemyAtk;
+                playerStats.healthSlider.fillAmount -= (float)enemyAtk / 100;
+                yield return new WaitForSeconds(2);
+
+            }
+
+
+
+        }
+
+    }
