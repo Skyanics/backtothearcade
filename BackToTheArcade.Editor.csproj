@@ -324,17 +324,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="BackToTheArcade.Plugins.csproj">
-      <Project>{C78C52C4-F5C2-D5A7-9F60-1BFB1AAD4D43}</Project>
-      <Name>BackToTheArcade.Plugins</Name>
-    </ProjectReference>
     <ProjectReference Include="BackToTheArcade.csproj">
       <Project>{3FCB7689-8FCD-5D5F-30EB-FFEACFE205E1}</Project>
       <Name>BackToTheArcade</Name>
-    </ProjectReference>
-    <ProjectReference Include="BackToTheArcade.Editor.Plugins.csproj">
-      <Project>{D6564182-D31C-B520-6891-565E6B265D3C}</Project>
-      <Name>BackToTheArcade.Editor.Plugins</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
@@ -352,6 +344,7 @@
     <Compile Include="Assets\Aura\Editor\Helpers\PreviewRenderUtilityHelpers.cs" />
     <Compile Include="Assets\Aura\Editor\Statics\GuiStyles.cs" />
     <Compile Include="Assets\Editor\Instant Screenshot\ScreenshotTaker.cs" />
+    <Compile Include="Assets\Other\Standard Assets\Editor\CrossPlatformInput\CrossPlatformInputInitialize.cs" />
     <Compile Include="Assets\PostProcessing\Editor\Attributes\PostProcessingModelEditorAttribute.cs" />
     <Compile Include="Assets\PostProcessing\Editor\Models\AmbientOcclusionModelEditor.cs" />
     <Compile Include="Assets\PostProcessing\Editor\Models\AntialiasingModelEditor.cs" />
@@ -473,6 +466,14 @@
     <None Include="Assets\Aura\Shaders\Shaders\StorePointLightShadowMap.shader" />
     <None Include="Assets\Aura\Shaders\Shaders\StoreShadowDataShader.shader" />
     <None Include="Assets\Aura\Shaders\Shaders\Surface\AuraStandardAlphaBlended.shader" />
+    <None Include="Assets\Other\SineVFX\TranslucentCrystals\Readme.txt" />
+    <None Include="Assets\Other\SineVFX\TranslucentCrystals\Resources\Shaders\Crystal.shader" />
+    <None Include="Assets\Other\SineVFX\TranslucentCrystals\Resources\Shaders\SkyboxProceduralDesaturated.shader" />
+    <None Include="Assets\Other\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
+    <None Include="Assets\Other\Standard Assets\ParticleSystems\ParticleSystemsGuidelines.txt" />
+    <None Include="Assets\Other\Standard Assets\ParticleSystems\Shaders\PriorityParticleAdd.shader" />
+    <None Include="Assets\Other\Standard Assets\ParticleSystems\Shaders\PriorityParticleAddSoft.shader" />
+    <None Include="Assets\Other\Standard Assets\ParticleSystems\Shaders\PriorityParticleAlpha.shader" />
     <None Include="Assets\PostProcessing\Editor Resources\Monitors\HistogramCompute.compute" />
     <None Include="Assets\PostProcessing\Editor Resources\Monitors\HistogramRender.shader" />
     <None Include="Assets\PostProcessing\Editor Resources\Monitors\ParadeRender.shader" />
@@ -735,11 +736,6 @@
     <None Include="Assets\Shaders\LightZodiac.shader" />
     <None Include="Assets\Shaders\Water.shader" />
     <None Include="Assets\Shaders\butterfly.shader" />
-    <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
-    <None Include="Assets\Standard Assets\ParticleSystems\ParticleSystemsGuidelines.txt" />
-    <None Include="Assets\Standard Assets\ParticleSystems\Shaders\PriorityParticleAdd.shader" />
-    <None Include="Assets\Standard Assets\ParticleSystems\Shaders\PriorityParticleAddSoft.shader" />
-    <None Include="Assets\Standard Assets\ParticleSystems\Shaders\PriorityParticleAlpha.shader" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
