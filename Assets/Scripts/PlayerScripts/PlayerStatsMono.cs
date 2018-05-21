@@ -8,7 +8,7 @@ public class PlayerStatsMono : MonoBehaviour {
     [Header("Health & Mana")]
     private float maxHealth = 100f;
     public float curHealth;
-    private float maxMana = 100f;
+    public float maxMana = 100f;
     public float curMana;
     public Image healthSlider;
     public Image manaSlider;
@@ -35,7 +35,8 @@ public class PlayerStatsMono : MonoBehaviour {
         butterflyPos = butterfly.transform.position;
 
         healthSlider.fillAmount = curHealth / maxHealth;
-        
+        manaSlider.fillAmount = curMana / maxMana;
+
 
         if (curHealth > maxHealth)
         {

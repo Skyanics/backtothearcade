@@ -428,6 +428,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1683331951579236
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4285758699750788}
+  m_Layer: 0
+  m_Name: '"Barrel"'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1717315861465742
 GameObject:
   m_ObjectHideFlags: 1
@@ -795,6 +810,19 @@ Transform:
   m_Father: {fileID: 4046229043803934}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -8.662941, y: -23.180296, z: -11.48273}
+--- !u!4 &4285758699750788
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1683331951579236}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0.69}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4831881332584470}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4351470201670634
 Transform:
   m_ObjectHideFlags: 1
@@ -1035,13 +1063,14 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1619137335691444}
   m_LocalRotation: {x: -0, y: 0.70710653, z: -0, w: 0.70710707}
-  m_LocalPosition: {x: -41.89, y: 2.57, z: -6.9}
+  m_LocalPosition: {x: 139.02002, y: 35.29, z: -6.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4487309860259752}
   - {fileID: 4365642886129606}
   - {fileID: 4759008474362538}
   - {fileID: 4871524687967464}
+  - {fileID: 4285758699750788}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 90.00001, z: 0}
@@ -1343,6 +1372,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   curHealth: 100
+  maxMana: 100
   curMana: 100
   healthSlider: {fileID: 0}
   manaSlider: {fileID: 0}
@@ -1366,6 +1396,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46775fa87ea631a4abfdbec647b6ee94, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerStats: {fileID: 114635002971779502}
   speed: 4
   Gravity: 14
   jumpForce: 10
@@ -1374,6 +1405,9 @@ MonoBehaviour:
   anim: {fileID: 95609253307420788}
   maxRayDistance: 5
   playerDamage: 20
+  projectile: {fileID: 0}
+  barrel: {fileID: 4285758699750788}
+  projectileSpeed: 5
 --- !u!136 &136628130695032722
 CapsuleCollider:
   m_ObjectHideFlags: 1

@@ -5,6 +5,7 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     private CharacterController controller;
+    public PlayerStatsMono playerStats;
     public float speed = 5.0f;
     private float verticalVelocity;
     public float Gravity;
@@ -22,6 +23,11 @@ public class Player : MonoBehaviour
     public float playerDamage = 20f;
 
     private bool wallJumped = false;
+
+    private float attackCharge;
+    public Transform projectile;
+    public Transform barrel;
+    public float projectileSpeed;
 
     // Use this for initialization
     void Start()
@@ -45,6 +51,13 @@ public class Player : MonoBehaviour
         }
     }
 
+    void PlayerChargedAttack()
+    {
+        Transform clone;
+        clone = Instantiate(projectile, barrel.position, barrel.rotation);
+        clone.GetComponent<Rigidbody>().AddForce(barrel.position * projectileSpeed);
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -61,6 +74,7 @@ public class Player : MonoBehaviour
             anim.SetBool("isRunning", false);
         }
 
+        // AUTOMATE THIS LATER
         if (Input.GetKey(KeyCode.E))
         {
             anim.SetBool("isPushing", true);
@@ -70,14 +84,32 @@ public class Player : MonoBehaviour
         {
             anim.SetBool("isPushing", false);
         }
+        // END
 
         if (Input.GetKeyDown(KeyCode.Q))
         {
             anim.SetBool("isAttacking", true);
             atkParticle.Play();
             PlayerAttack();
-  
         }
+
+        if (Input.GetKey(KeyCode.Q) && playerStats.curMana == playerStats.maxMana)
+        {
+            attackCharge += Time.deltaTime;
+        }
+
+        if (attackCharge >= 1)
+        {
+            PlayerChargedAttack();
+            attackCharge = 0;
+            playerStats.curMana -= playerStats.maxMana;
+        }
+
+        if (Input.GetKeyUp(KeyCode.Q))
+        {
+            attackCharge = 0;
+        }
+
 
         else
         {
