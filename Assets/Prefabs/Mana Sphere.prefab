@@ -23,6 +23,8 @@ GameObject:
   - component: {fileID: 23177482000937520}
   - component: {fileID: 198586193931198356}
   - component: {fileID: 199187681450416756}
+  - component: {fileID: 65164697532839920}
+  - component: {fileID: 114996059554241108}
   m_Layer: 0
   m_Name: Mana Sphere
   m_TagString: Untagged
@@ -37,7 +39,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1162202873741994}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -22.900002, y: -0.009999752, z: 0.024871826}
+  m_LocalPosition: {x: 16.936113, y: 4.198, z: -7.953}
   m_LocalScale: {x: 0.5194881, y: 0.5194881, z: 0.5194881}
   m_Children: []
   m_Father: {fileID: 0}
@@ -84,6 +86,32 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1162202873741994}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!65 &65164697532839920
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1162202873741994}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.99999994, y: 0.99999994, z: 0.99999994}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &114996059554241108
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1162202873741994}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ff1b0dbc78e17e4cb3b40ce3aa36bbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isMana: 1
+  isHealth: 0
+  stats: {fileID: 0}
 --- !u!198 &198586193931198356
 ParticleSystem:
   m_ObjectHideFlags: 1
@@ -144,7 +172,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 1752399359
+  randomSeed: 1761199558
   InitialModule:
     serializedVersion: 3
     enabled: 1

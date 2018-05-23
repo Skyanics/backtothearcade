@@ -38,14 +38,15 @@ public class PlayerStatsMono : MonoBehaviour {
         manaSlider.fillAmount = curMana / maxMana;
 
 
+
         if (curHealth > maxHealth)
         {
             curHealth = maxHealth;
         }
 
-        if (curHealth < maxHealth)
+        if (curMana > maxMana)
         {
-            pickUpHealth = true;
+            curMana = maxMana;
         }
 
         if (curHealth <= 0)

@@ -431,6 +431,7 @@
     <Compile Include="Assets\Other\Standard Assets\Utility\TimedObjectDestructor.cs" />
     <Compile Include="Assets\Other\Standard Assets\Utility\WaypointCircuit.cs" />
     <Compile Include="Assets\Other\Standard Assets\Utility\WaypointProgressTracker.cs" />
+    <Compile Include="Assets\PickUpBuff.cs" />
     <Compile Include="Assets\PostProcessing\Runtime\Attributes\GetSetAttribute.cs" />
     <Compile Include="Assets\PostProcessing\Runtime\Attributes\MinAttribute.cs" />
     <Compile Include="Assets\PostProcessing\Runtime\Attributes\TrackballAttribute.cs" />
@@ -482,7 +483,6 @@
     <Compile Include="Assets\ProCore\ProBuilder\API Examples\Procedural Mesh\ExtrudeRandomEdges.cs" />
     <Compile Include="Assets\ProCore\ProBuilder\API Examples\Runtime Editing\RuntimeEdit.cs" />
     <Compile Include="Assets\ProCore\ProBuilder\API Examples\Vertex Colors\HighlightNearestFace.cs" />
-    <Compile Include="Assets\projectileScript.cs" />
     <Compile Include="Assets\Scripts\Enemy Scripts\EnemyAI.cs" />
     <Compile Include="Assets\Scripts\MovingPlatform.cs" />
     <Compile Include="Assets\Scripts\Other\InteractionObjectScript.cs" />
@@ -498,6 +498,7 @@
     <Compile Include="Assets\ShaderForge\Example Assets\Scripts\EditorLabel.cs" />
     <Compile Include="Assets\ShaderForge\Example Assets\Scripts\EnableCameraDepthInForward.cs" />
     <Compile Include="Assets\ShaderForge\Example Assets\Scripts\SoftNormalsToVertexColor.cs" />
+    <Compile Include="Assets\StopAnim.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Aura\Editor\Shaders\ColorFieldDrawerShader.shader" />

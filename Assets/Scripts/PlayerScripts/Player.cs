@@ -25,37 +25,13 @@ public class Player : MonoBehaviour
     private bool wallJumped = false;
 
     private float attackCharge;
-    public Transform projectile;
-    public Transform barrel;
-    public float projectileSpeed;
+    public Light playerLight;
+
 
     // Use this for initialization
     void Start()
     {
         controller = GetComponent<CharacterController>();
-    }
-
-    void PlayerAttack()
-    {
-        Vector3 forward = transform.TransformDirection(Vector3.forward) * 10;
-        Ray ray = new Ray(transform.position, forward);
-        RaycastHit hit;
-
-        if (Physics.Raycast(ray, out hit, maxRayDistance))
-        {
-            if (hit.transform.tag == "Enemy")
-            {
-                Debug.DrawRay(transform.position, Vector3.left, Color.red);
-                hit.transform.GetComponent<EnemyAI>().enemycurrentHealth -= playerDamage;
-            }
-        }
-    }
-
-    void PlayerChargedAttack()
-    {
-        Transform clone;
-        clone = Instantiate(projectile, barrel.position, barrel.rotation);
-        clone.GetComponent<Rigidbody>().AddForce(barrel.position * projectileSpeed);
     }
 
     // Update is called once per frame
@@ -100,14 +76,17 @@ public class Player : MonoBehaviour
 
         if (attackCharge >= 1)
         {
-            PlayerChargedAttack();
+            PlayerChargedAttack(transform.position, 5, 100);
             attackCharge = 0;
             playerStats.curMana -= playerStats.maxMana;
+            playerLight.intensity = Mathf.Lerp(1f, 5f, 5f);
+            anim.SetBool("isSpecialAttack", true);
         }
 
         if (Input.GetKeyUp(KeyCode.Q))
         {
             attackCharge = 0;
+            playerLight.intensity = Mathf.Lerp(5f,1f,5f);
         }
 
 
@@ -200,6 +179,42 @@ public class Player : MonoBehaviour
                 wallJumped = true;
             }
         }
+
+    }
+
+    void PlayerAttack()
+    {
+        Vector3 forward = transform.TransformDirection(Vector3.forward) * 10;
+        Ray ray = new Ray(transform.position, forward);
+        RaycastHit hit;
+
+        if (Physics.Raycast(ray, out hit, maxRayDistance))
+        {
+            if (hit.transform.tag == "Enemy")
+            {
+                Debug.DrawRay(transform.position, Vector3.left, Color.red);
+                hit.transform.GetComponent<EnemyAI>().enemycurrentHealth -= playerDamage;
+            }
+        }
+    }
+
+    void PlayerChargedAttack(Vector3 location, float radius, float damage)
+    {
+        Collider[] objectsInRange = Physics.OverlapSphere(location, radius);
+        foreach (Collider col in objectsInRange)
+        {
+            EnemyAI enemy = col.GetComponent<EnemyAI>();
+            if (enemy != null)
+            {
+                // linear falloff of effect
+                float proximity = (location - enemy.transform.position).magnitude;
+                float effect = 1 - (proximity / radius);
+
+                enemy.enemycurrentHealth -= damage * effect;
+            }
+        }
+
+       
 
     }
 }
