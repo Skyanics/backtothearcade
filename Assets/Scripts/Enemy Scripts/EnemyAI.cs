@@ -46,6 +46,7 @@ public class EnemyAI : MonoBehaviour
     [SerializeField]
     private bool playerSighted = false;
     public Vector3 curDirection;
+    public Text enemyName;
 
 
     // Use this for initialization
@@ -120,7 +121,7 @@ public class EnemyAI : MonoBehaviour
     void Update()
     {
 
-        //string text = name;
+        enemyName.text = name;
         //healthBar.text = text;
 
         healthbar.fillAmount = enemycurrentHealth / enemyHealth;

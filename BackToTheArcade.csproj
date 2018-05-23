@@ -387,6 +387,7 @@
     <Compile Include="Assets\Aura\Structs\VolumeInjectionShape.cs" />
     <Compile Include="Assets\Aura\Structs\VolumeLevelsData.cs" />
     <Compile Include="Assets\Aura\Structs\VolumeTextureData.cs" />
+    <Compile Include="Assets\FaceCamScript.cs" />
     <Compile Include="Assets\Other\Standard Assets\CrossPlatformInput\Scripts\AxisTouchButton.cs" />
     <Compile Include="Assets\Other\Standard Assets\CrossPlatformInput\Scripts\ButtonHandler.cs" />
     <Compile Include="Assets\Other\Standard Assets\CrossPlatformInput\Scripts\CrossPlatformInputManager.cs" />
