@@ -387,7 +387,6 @@
     <Compile Include="Assets\Aura\Structs\VolumeInjectionShape.cs" />
     <Compile Include="Assets\Aura\Structs\VolumeLevelsData.cs" />
     <Compile Include="Assets\Aura\Structs\VolumeTextureData.cs" />
-    <Compile Include="Assets\FaceCamScript.cs" />
     <Compile Include="Assets\Other\Standard Assets\CrossPlatformInput\Scripts\AxisTouchButton.cs" />
     <Compile Include="Assets\Other\Standard Assets\CrossPlatformInput\Scripts\ButtonHandler.cs" />
     <Compile Include="Assets\Other\Standard Assets\CrossPlatformInput\Scripts\CrossPlatformInputManager.cs" />
@@ -432,7 +431,6 @@
     <Compile Include="Assets\Other\Standard Assets\Utility\TimedObjectDestructor.cs" />
     <Compile Include="Assets\Other\Standard Assets\Utility\WaypointCircuit.cs" />
     <Compile Include="Assets\Other\Standard Assets\Utility\WaypointProgressTracker.cs" />
-    <Compile Include="Assets\PickUpBuff.cs" />
     <Compile Include="Assets\PostProcessing\Runtime\Attributes\GetSetAttribute.cs" />
     <Compile Include="Assets\PostProcessing\Runtime\Attributes\MinAttribute.cs" />
     <Compile Include="Assets\PostProcessing\Runtime\Attributes\TrackballAttribute.cs" />
@@ -485,10 +483,12 @@
     <Compile Include="Assets\ProCore\ProBuilder\API Examples\Runtime Editing\RuntimeEdit.cs" />
     <Compile Include="Assets\ProCore\ProBuilder\API Examples\Vertex Colors\HighlightNearestFace.cs" />
     <Compile Include="Assets\Scripts\Enemy Scripts\EnemyAI.cs" />
+    <Compile Include="Assets\Scripts\FaceCamScript.cs" />
     <Compile Include="Assets\Scripts\MovingPlatform.cs" />
     <Compile Include="Assets\Scripts\Other\InteractionObjectScript.cs" />
     <Compile Include="Assets\Scripts\Other\LoadingScreen.cs" />
     <Compile Include="Assets\Scripts\Other\StartingLight.cs" />
+    <Compile Include="Assets\Scripts\PickUpBuff.cs" />
     <Compile Include="Assets\Scripts\PlayerScripts\CameraFollow.cs" />
     <Compile Include="Assets\Scripts\PlayerScripts\CompanionScript.cs" />
     <Compile Include="Assets\Scripts\PlayerScripts\Player.cs" />
@@ -496,10 +496,10 @@
     <Compile Include="Assets\Scripts\Saving\SaveData.cs" />
     <Compile Include="Assets\Scripts\Saving\SaveDataManager.cs" />
     <Compile Include="Assets\Scripts\Saving\SaveDataPoint.cs" />
+    <Compile Include="Assets\Scripts\StopAnim.cs" />
     <Compile Include="Assets\ShaderForge\Example Assets\Scripts\EditorLabel.cs" />
     <Compile Include="Assets\ShaderForge\Example Assets\Scripts\EnableCameraDepthInForward.cs" />
     <Compile Include="Assets\ShaderForge\Example Assets\Scripts\SoftNormalsToVertexColor.cs" />
-    <Compile Include="Assets\StopAnim.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Aura\Editor\Shaders\ColorFieldDrawerShader.shader" />

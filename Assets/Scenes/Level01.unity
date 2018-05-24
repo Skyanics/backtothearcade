@@ -730,6 +730,7 @@ Transform:
   - {fileID: 1333546762}
   - {fileID: 689222390}
   - {fileID: 1849660694}
+  - {fileID: 1644253260}
   - {fileID: 1619375664}
   - {fileID: 906749037}
   - {fileID: 1896343894}
@@ -755,9 +756,9 @@ Transform:
   - {fileID: 1065213185}
   - {fileID: 1169603326}
   - {fileID: 167940647}
-  - {fileID: 1644253260}
-  - {fileID: 360090398}
   - {fileID: 1447164251}
+  - {fileID: 360090398}
+  - {fileID: 911007215}
   - {fileID: 2011501529}
   - {fileID: 1145583774}
   - {fileID: 1535488466}
@@ -794,9 +795,9 @@ Transform:
   - {fileID: 1261570770}
   - {fileID: 672193308}
   - {fileID: 1780385730}
-  - {fileID: 911007215}
   - {fileID: 1074938222}
   - {fileID: 891327834}
+  - {fileID: 615863905}
   - {fileID: 308390935}
   - {fileID: 1905985898}
   - {fileID: 442068568}
@@ -835,7 +836,6 @@ Transform:
   - {fileID: 74977606}
   - {fileID: 1659393505}
   - {fileID: 1624852903}
-  - {fileID: 615863905}
   - {fileID: 86628227}
   - {fileID: 875528669}
   - {fileID: 575246956}
@@ -981,6 +981,7 @@ Transform:
   - {fileID: 1035589921}
   - {fileID: 669664286}
   - {fileID: 1901038650}
+  - {fileID: 1920882912}
   - {fileID: 220541430}
   - {fileID: 1656590746}
   - {fileID: 1522833359}
@@ -999,7 +1000,6 @@ Transform:
   - {fileID: 2118446204}
   - {fileID: 555411508}
   - {fileID: 1955554124}
-  - {fileID: 1920882912}
   - {fileID: 1434917836}
   - {fileID: 1425325342}
   - {fileID: 414929782}
@@ -6048,7 +6048,7 @@ Transform:
   m_LocalScale: {x: 5.6367083, y: 5.636709, z: 5.636709}
   m_Children: []
   m_Father: {fileID: 96186707}
-  m_RootOrder: 118
+  m_RootOrder: 80
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &622103532 stripped
 Transform:
@@ -8638,7 +8638,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 96186707}
-  m_RootOrder: 77
+  m_RootOrder: 41
   m_LocalEulerAnglesHint: {x: 21.926, y: -33.119003, z: -63.419003}
 --- !u!1001 &911289258
 Prefab:
@@ -12560,6 +12560,37 @@ Transform:
   m_PrefabParentObject: {fileID: 4904412299612628, guid: 484b9987e4eb6994da68fccd1068f1c0,
     type: 2}
   m_PrefabInternal: {fileID: 136785202}
+--- !u!84 &1196914379
+RenderTexture:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_ImageContentsHash:
+    serializedVersion: 2
+    Hash: 00000000000000000000000000000000
+  m_ForcedFallbackFormat: 4
+  m_DownscaleFallback: 0
+  m_Width: 512
+  m_Height: 512
+  m_AntiAliasing: 1
+  m_DepthFormat: 0
+  m_ColorFormat: 11
+  m_MipMap: 0
+  m_GenerateMips: 1
+  m_SRGB: 0
+  m_UseDynamicScale: 0
+  m_BindMS: 0
+  m_TextureSettings:
+    serializedVersion: 2
+    m_FilterMode: 1
+    m_Aniso: 1
+    m_MipBias: 0
+    m_WrapU: 1
+    m_WrapV: 1
+    m_WrapW: 1
+  m_Dimension: 2
+  m_VolumeDepth: 1
 --- !u!1001 &1198418713
 Prefab:
   m_ObjectHideFlags: 0
@@ -17306,16 +17337,16 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1644253257}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f01d29d88278f45458d99e6b5199e920, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  strength: 1
+  strength: 1.45
   overrideColor: 1
-  overridingColor: {r: 0.84626716, g: 0.8530805, b: 0.9999, a: 1}
+  overridingColor: {r: 0.09670113, g: 0.5305342, b: 0.9999, a: 1}
   useShadow: 1
-  shadowMapRenderTexture: {fileID: 0}
+  shadowMapRenderTexture: {fileID: 1196914379}
   useCookie: 1
   cookieMapRenderTexture: {fileID: 0}
   enableOutOfPhaseColor: 0
@@ -17323,7 +17354,7 @@ MonoBehaviour:
   outOfPhaseColor: {r: 0, g: 1, b: 1, a: 1}
   storeShadowDataShader: {fileID: 4800000, guid: fff19db2423616b4dbabe995cd97279e,
     type: 3}
-  shadowDataRenderTexture: {fileID: 0}
+  shadowDataRenderTexture: {fileID: 1971982615}
   customDistanceFalloffThreshold: 0.5
   customDistanceFalloffPower: 2
   storeDirectionalSpotLightCookieMapShader: {fileID: 4800000, guid: ffdac5434c39f7545b910c253007c8fc,
@@ -17386,7 +17417,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 96186707}
-  m_RootOrder: 38
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 42.703003, y: -98.269005, z: 1.595}
 --- !u!1001 &1648815693
 Prefab:
@@ -19993,7 +20024,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 96186707}
-  m_RootOrder: 282
+  m_RootOrder: 264
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1925317130 stripped
 Transform:
@@ -20481,6 +20512,37 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6ff0932c80346e04285fb3164b9a10ec, type: 2}
   m_IsPrefabParent: 0
+--- !u!84 &1971982615
+RenderTexture:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_ImageContentsHash:
+    serializedVersion: 2
+    Hash: 00000000000000000000000000000000
+  m_ForcedFallbackFormat: 4
+  m_DownscaleFallback: 0
+  m_Width: 32
+  m_Height: 1
+  m_AntiAliasing: 1
+  m_DepthFormat: 0
+  m_ColorFormat: 11
+  m_MipMap: 0
+  m_GenerateMips: 1
+  m_SRGB: 0
+  m_UseDynamicScale: 0
+  m_BindMS: 0
+  m_TextureSettings:
+    serializedVersion: 2
+    m_FilterMode: 1
+    m_Aniso: 1
+    m_MipBias: 0
+    m_WrapU: 1
+    m_WrapV: 1
+    m_WrapW: 1
+  m_Dimension: 2
+  m_VolumeDepth: 1
 --- !u!4 &1974229034 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4370071429807016, guid: 6ff0932c80346e04285fb3164b9a10ec,
