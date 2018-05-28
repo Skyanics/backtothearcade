@@ -22,7 +22,7 @@ public class PickUpBuff : MonoBehaviour {
 
         if (other.tag == "Player" && isHealth == true)
         {
-            stats.curHealth += chargeValue;
+            stats.curHealth += stats.maxHealth - stats.curHealth;
             Destroy(this.gameObject);
         }
 

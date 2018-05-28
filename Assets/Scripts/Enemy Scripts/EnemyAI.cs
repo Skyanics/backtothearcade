@@ -68,7 +68,7 @@ public class EnemyAI : MonoBehaviour
             MaxChaseDist = 10;
             MaxAttackDist = 6;
             MinDist = 5;
-            name = "Rat Knight";
+            name = "Tainted Rat";
             // enemyMesh.transform.GetChild(1).gameObject.SetActive(true);
         }
 
@@ -80,7 +80,7 @@ public class EnemyAI : MonoBehaviour
             MaxChaseDist = 10;
             MaxAttackDist = 6;
             MinDist = 5;
-            name = "Rat Brute";
+            name = "Corrupted Rat";
             //  enemyMesh.transform.GetChild(0).gameObject.SetActive(true);
         }
     }

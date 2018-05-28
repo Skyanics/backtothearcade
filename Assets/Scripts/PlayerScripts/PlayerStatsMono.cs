@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class PlayerStatsMono : MonoBehaviour {
 
     [Header("Health & Mana")]
-    private float maxHealth = 100f;
+    public float maxHealth = 100f;
     public float curHealth;
     public float maxMana = 100f;
     public float curMana;
