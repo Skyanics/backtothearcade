@@ -37,11 +37,11 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       
+
         moveVector = Vector3.zero;
         moveVector.x = Input.GetAxis("Horizontal") * speed;
 
-        if (Input.GetKey(KeyCode.A) || (Input.GetKey(KeyCode.D)))
+        if (Input.GetAxis("Horizontal") >= 1 || Input.GetAxis("Horizontal") <= -1)
         {
             anim.SetBool("isRunning", true);
         }
@@ -51,7 +51,7 @@ public class Player : MonoBehaviour
         }
 
         // AUTOMATE THIS LATER
-        if (Input.GetKey(KeyCode.E))
+        if (Input.GetKey(KeyCode.E) || Input.GetButtonDown("Fire2"))
         {
             anim.SetBool("isPushing", true);
         }
@@ -62,14 +62,14 @@ public class Player : MonoBehaviour
         }
         // END
 
-        if (Input.GetKeyDown(KeyCode.Q))
+        if (Input.GetKeyDown(KeyCode.Q) || Input.GetButtonUp("Fire1"))
         {
             anim.SetBool("isAttacking", true);
             atkParticle.Play();
             PlayerAttack();
         }
 
-        if (Input.GetKey(KeyCode.Q) && playerStats.curMana == playerStats.maxMana)
+        if (Input.GetKey(KeyCode.Q) || Input.GetButtonUp("Fire1") && playerStats.curMana == playerStats.maxMana)
         {
             attackCharge += Time.deltaTime;
         }
@@ -83,10 +83,10 @@ public class Player : MonoBehaviour
             anim.SetBool("isSpecialAttack", true);
         }
 
-        if (Input.GetKeyUp(KeyCode.Q))
+        if (Input.GetKeyUp(KeyCode.Q) || Input.GetButtonUp("Fire1"))
         {
             attackCharge = 0;
-            playerLight.intensity = Mathf.Lerp(5f,1f,5f);
+            playerLight.intensity = Mathf.Lerp(5f, 1f, 5f);
         }
 
 
@@ -103,7 +103,7 @@ public class Player : MonoBehaviour
             anim.SetBool("isGrounded", true);
 
 
-            if (Input.GetKeyDown(KeyCode.Space))
+            if (Input.GetKeyDown(KeyCode.Space) || Input.GetButtonDown("Jump"))
             {
                 anim.SetBool("isGrounded", false);
                 anim.SetBool("isJumping", true);
@@ -143,14 +143,14 @@ public class Player : MonoBehaviour
             partrot.z = -15;
         }
 
-        if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
+        if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow) || Input.GetAxis("Horizontal") <= -1)
         {
             rot = Quaternion.LookRotation(Vector3.left);
             
             
         }
 
-        if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
+        if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow) || Input.GetAxis("Horizontal") >= 1)
         {
             rot = Quaternion.LookRotation(Vector3.right);
         }
@@ -170,7 +170,7 @@ public class Player : MonoBehaviour
     {
         if (!controller.isGrounded && hit.normal.y < 0.1f)
         {
-            if (Input.GetKeyDown(KeyCode.Space))
+            if (Input.GetKeyDown(KeyCode.Space) || Input.GetButtonDown("Jump"))
             {
                 Debug.DrawRay(hit.point, hit.normal, Color.red, 1.25f);
                 verticalVelocity = jumpForce;

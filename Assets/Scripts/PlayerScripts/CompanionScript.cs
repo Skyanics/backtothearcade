@@ -28,12 +28,12 @@ public class CompanionScript : MonoBehaviour
             currentOffset = offsetLeft;
         }
 
-        if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
+        if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow) || Input.GetAxis("Horizontal") <= -1)
         {
             transform.rotation = Quaternion.LookRotation(Vector3.right);
         }
 
-        if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
+        if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow) || Input.GetAxis("Horizontal") >= 1)
         {
             transform.rotation = Quaternion.LookRotation(Vector3.left);
             Vector3 desiredPosition = target.position + offsetLeft;

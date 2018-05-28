@@ -114,6 +114,51 @@
      <Compile Include="Assets\Aura\Structs\VolumeInjectionShape.cs" />
      <Compile Include="Assets\Aura\Structs\VolumeLevelsData.cs" />
      <Compile Include="Assets\Aura\Structs\VolumeTextureData.cs" />
+     <Compile Include="Assets\DeathWall.cs" />
+     <Compile Include="Assets\Other\Standard Assets\CrossPlatformInput\Scripts\AxisTouchButton.cs" />
+     <Compile Include="Assets\Other\Standard Assets\CrossPlatformInput\Scripts\ButtonHandler.cs" />
+     <Compile Include="Assets\Other\Standard Assets\CrossPlatformInput\Scripts\CrossPlatformInputManager.cs" />
+     <Compile Include="Assets\Other\Standard Assets\CrossPlatformInput\Scripts\InputAxisScrollbar.cs" />
+     <Compile Include="Assets\Other\Standard Assets\CrossPlatformInput\Scripts\Joystick.cs" />
+     <Compile Include="Assets\Other\Standard Assets\CrossPlatformInput\Scripts\MobileControlRig.cs" />
+     <Compile Include="Assets\Other\Standard Assets\CrossPlatformInput\Scripts\PlatformSpecific\MobileInput.cs" />
+     <Compile Include="Assets\Other\Standard Assets\CrossPlatformInput\Scripts\PlatformSpecific\StandaloneInput.cs" />
+     <Compile Include="Assets\Other\Standard Assets\CrossPlatformInput\Scripts\TiltInput.cs" />
+     <Compile Include="Assets\Other\Standard Assets\CrossPlatformInput\Scripts\TouchPad.cs" />
+     <Compile Include="Assets\Other\Standard Assets\CrossPlatformInput\Scripts\VirtualInput.cs" />
+     <Compile Include="Assets\Other\Standard Assets\ParticleSystems\Scripts\AfterburnerPhysicsForce.cs" />
+     <Compile Include="Assets\Other\Standard Assets\ParticleSystems\Scripts\ExplosionFireAndDebris.cs" />
+     <Compile Include="Assets\Other\Standard Assets\ParticleSystems\Scripts\ExplosionPhysicsForce.cs" />
+     <Compile Include="Assets\Other\Standard Assets\ParticleSystems\Scripts\Explosive.cs" />
+     <Compile Include="Assets\Other\Standard Assets\ParticleSystems\Scripts\ExtinguishableParticleSystem.cs" />
+     <Compile Include="Assets\Other\Standard Assets\ParticleSystems\Scripts\FireLight.cs" />
+     <Compile Include="Assets\Other\Standard Assets\ParticleSystems\Scripts\Hose.cs" />
+     <Compile Include="Assets\Other\Standard Assets\ParticleSystems\Scripts\ParticleSystemMultiplier.cs" />
+     <Compile Include="Assets\Other\Standard Assets\ParticleSystems\Scripts\SmokeParticles.cs" />
+     <Compile Include="Assets\Other\Standard Assets\ParticleSystems\Scripts\WaterHoseParticles.cs" />
+     <Compile Include="Assets\Other\Standard Assets\Utility\ActivateTrigger.cs" />
+     <Compile Include="Assets\Other\Standard Assets\Utility\AlphaButtonClickMask.cs" />
+     <Compile Include="Assets\Other\Standard Assets\Utility\AutoMobileShaderSwitch.cs" />
+     <Compile Include="Assets\Other\Standard Assets\Utility\CameraRefocus.cs" />
+     <Compile Include="Assets\Other\Standard Assets\Utility\CurveControlledBob.cs" />
+     <Compile Include="Assets\Other\Standard Assets\Utility\DragRigidbody.cs" />
+     <Compile Include="Assets\Other\Standard Assets\Utility\DynamicShadowSettings.cs" />
+     <Compile Include="Assets\Other\Standard Assets\Utility\EventSystemChecker.cs" />
+     <Compile Include="Assets\Other\Standard Assets\Utility\FollowTarget.cs" />
+     <Compile Include="Assets\Other\Standard Assets\Utility\ForcedReset.cs" />
+     <Compile Include="Assets\Other\Standard Assets\Utility\FOVKick.cs" />
+     <Compile Include="Assets\Other\Standard Assets\Utility\FPSCounter.cs" />
+     <Compile Include="Assets\Other\Standard Assets\Utility\LerpControlledBob.cs" />
+     <Compile Include="Assets\Other\Standard Assets\Utility\ObjectResetter.cs" />
+     <Compile Include="Assets\Other\Standard Assets\Utility\ParticleSystemDestroyer.cs" />
+     <Compile Include="Assets\Other\Standard Assets\Utility\PlatformSpecificContent.cs" />
+     <Compile Include="Assets\Other\Standard Assets\Utility\SimpleActivatorMenu.cs" />
+     <Compile Include="Assets\Other\Standard Assets\Utility\SimpleMouseRotator.cs" />
+     <Compile Include="Assets\Other\Standard Assets\Utility\SmoothFollow.cs" />
+     <Compile Include="Assets\Other\Standard Assets\Utility\TimedObjectActivator.cs" />
+     <Compile Include="Assets\Other\Standard Assets\Utility\TimedObjectDestructor.cs" />
+     <Compile Include="Assets\Other\Standard Assets\Utility\WaypointCircuit.cs" />
+     <Compile Include="Assets\Other\Standard Assets\Utility\WaypointProgressTracker.cs" />
      <Compile Include="Assets\PostProcessing\Runtime\Attributes\GetSetAttribute.cs" />
      <Compile Include="Assets\PostProcessing\Runtime\Attributes\MinAttribute.cs" />
      <Compile Include="Assets\PostProcessing\Runtime\Attributes\TrackballAttribute.cs" />
@@ -165,20 +210,24 @@
      <Compile Include="Assets\ProCore\ProBuilder\API Examples\Procedural Mesh\ExtrudeRandomEdges.cs" />
      <Compile Include="Assets\ProCore\ProBuilder\API Examples\Runtime Editing\RuntimeEdit.cs" />
      <Compile Include="Assets\ProCore\ProBuilder\API Examples\Vertex Colors\HighlightNearestFace.cs" />
-     <Compile Include="Assets\Scripts\CameraFollow.cs" />
-     <Compile Include="Assets\Scripts\CompanionScript.cs" />
-     <Compile Include="Assets\Scripts\EnemyAI.cs" />
-     <Compile Include="Assets\Scripts\InteractionObjectScript.cs" />
-     <Compile Include="Assets\Scripts\LoadingScreen.cs" />
-     <Compile Include="Assets\Scripts\Player.cs" />
-     <Compile Include="Assets\Scripts\PlayerStatsMono.cs" />
-     <Compile Include="Assets\Scripts\SaveData.cs" />
-     <Compile Include="Assets\Scripts\SaveDataManager.cs" />
-     <Compile Include="Assets\Scripts\SaveDataPoint.cs" />
+     <Compile Include="Assets\Scripts\Enemy Scripts\EnemyAI.cs" />
+     <Compile Include="Assets\Scripts\FaceCamScript.cs" />
+     <Compile Include="Assets\Scripts\MovingPlatform.cs" />
+     <Compile Include="Assets\Scripts\Other\InteractionObjectScript.cs" />
+     <Compile Include="Assets\Scripts\Other\LoadingScreen.cs" />
+     <Compile Include="Assets\Scripts\Other\StartingLight.cs" />
+     <Compile Include="Assets\Scripts\PickUpBuff.cs" />
+     <Compile Include="Assets\Scripts\PlayerScripts\CameraFollow.cs" />
+     <Compile Include="Assets\Scripts\PlayerScripts\CompanionScript.cs" />
+     <Compile Include="Assets\Scripts\PlayerScripts\Player.cs" />
+     <Compile Include="Assets\Scripts\PlayerScripts\PlayerStatsMono.cs" />
+     <Compile Include="Assets\Scripts\Saving\SaveData.cs" />
+     <Compile Include="Assets\Scripts\Saving\SaveDataManager.cs" />
+     <Compile Include="Assets\Scripts\Saving\SaveDataPoint.cs" />
+     <Compile Include="Assets\Scripts\StopAnim.cs" />
      <Compile Include="Assets\ShaderForge\Example Assets\Scripts\EditorLabel.cs" />
      <Compile Include="Assets\ShaderForge\Example Assets\Scripts\EnableCameraDepthInForward.cs" />
      <Compile Include="Assets\ShaderForge\Example Assets\Scripts\SoftNormalsToVertexColor.cs" />
-     <Compile Include="Assets\StartingLight.cs" />
      <None Include="Assets\PostProcessing\Resources\Shaders\DepthOfField.shader" />
      <None Include="Assets\Aura\Shaders\Shaders\Particles\AuraParticlesBlendAdd.shader" />
      <None Include="Assets\ProCore\ProBuilder\Shader\pb_TransparentOverlay.shader" />
@@ -208,6 +257,7 @@
      <None Include="Assets\ShaderForge\Readme.txt" />
      <None Include="Assets\Shaders\LightZodiac.shader" />
      <None Include="Assets\PostProcessing\Resources\Shaders\UberSecondPass.cginc" />
+     <None Include="Assets\Other\SineVFX\TranslucentCrystals\Readme.txt" />
      <None Include="Assets\PostProcessing\Resources\Shaders\Tonemapping.cginc" />
      <None Include="Assets\Aura\Shaders\ComputeShaders\ComputeDataComputeShader.compute" />
      <None Include="Assets\PostProcessing\Editor Resources\Monitors\HistogramCompute.compute" />
@@ -228,6 +278,7 @@
      <None Include="Assets\Aura\Shaders\ComputeShaders\Includes\DirectionalLightInjection.cginc" />
      <None Include="Assets\ShaderForge\Example Assets\Shaders\Refraction.shader" />
      <None Include="Assets\ProCore\ProBuilder\Shader\pb_VertexPicker.shader" />
+     <None Include="Assets\Other\Standard Assets\ParticleSystems\Shaders\PriorityParticleAlpha.shader" />
      <None Include="Assets\ProCore\ProBuilder\Shader\pb_HideVertices.shader" />
      <None Include="Assets\PostProcessing\Resources\Bluenoise64\LICENSE.txt" />
      <None Include="Assets\Aura\Examples\Sponza\Fireball\FireballBlendAdd.shader" />
@@ -235,6 +286,7 @@
      <None Include="Assets\PostProcessing\Resources\Shaders\BuiltinDebugViews.shader" />
      <None Include="Assets\ShaderForge\Example Assets\Shaders\Parallax.shader" />
      <None Include="Assets\Aura\Shaders\Shaders\Particles\AuraParticlesAlphaBlend.shader" />
+     <None Include="Assets\Other\Standard Assets\ParticleSystems\ParticleSystemsGuidelines.txt" />
      <None Include="Assets\ProCore\ProBuilder\About\ThirdPartyLicenses.txt" />
      <None Include="Assets\PostProcessing\Resources\Shaders\Common.cginc" />
      <None Include="Assets\PostProcessing\Resources\Bluenoise64\COPYING.txt" />
@@ -244,10 +296,12 @@
      <None Include="Assets\Aura\Shaders\Aura.cginc" />
      <None Include="Assets\PostProcessing\Editor Resources\UI\Trackball.shader" />
      <None Include="Assets\Aura\Shaders\Includes\Structs.cginc" />
+     <None Include="Assets\Other\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
      <None Include="Assets\Aura\Shaders\Shaders\Particles\AuraParticlesAdditive.shader" />
      <None Include="Assets\Aura\Shaders\ComputeShaders\ComputeAccumulationComputeShader.compute" />
      <None Include="Assets\Aura\Shaders\ComputeShaders\Includes\TemporalReprojection.cginc" />
      <None Include="Assets\Aura\Shaders\Shaders\ProcessOcclusionTextureShader.shader" />
+     <None Include="Assets\Other\Standard Assets\ParticleSystems\Shaders\PriorityParticleAddSoft.shader" />
      <None Include="Assets\Aura\Shaders\Includes\BlueNoise.cginc" />
      <None Include="Assets\PostProcessing\Resources\Shaders\Bloom.cginc" />
      <None Include="Assets\Aura\Shaders\ComputeShaders\Includes\VolumeInjection.cginc" />
@@ -272,6 +326,7 @@
      <None Include="Assets\ShaderForge\Example Assets\Shaders\Tiles.shader" />
      <None Include="Assets\ProCore\ProBuilder\Shader\pb_NormalPreview.shader" />
      <None Include="Assets\PostProcessing\Resources\Shaders\Bloom.shader" />
+     <None Include="Assets\Other\SineVFX\TranslucentCrystals\Resources\Shaders\SkyboxProceduralDesaturated.shader" />
      <None Include="Assets\Aura\Shaders\Includes\AuraUsage.cginc" />
      <None Include="Assets\Aura\Shaders\Shaders\Surface\AuraStandardAlphaBlended.shader" />
      <None Include="Assets\ShaderForge\Example Assets\Shaders\PixelRotator.shader" />
@@ -282,11 +337,13 @@
      <None Include="Assets\ProCore\ProBuilder\readme.txt" />
      <None Include="Assets\PostProcessing\Resources\Shaders\ColorGrading.cginc" />
      <None Include="Assets\Aura\Shaders\ComputeShaders\Includes\OcclusionCulling.cginc" />
+     <None Include="Assets\Other\Standard Assets\ParticleSystems\Shaders\PriorityParticleAdd.shader" />
      <None Include="Assets\PostProcessing\Resources\Shaders\AmbientOcclusion.cginc" />
      <None Include="Assets\Aura\Shaders\ComputeShaders\Includes\SpotLightInjection.cginc" />
      <None Include="Assets\Aura\Shaders\Includes\AuraParticlesBase.cginc" />
      <None Include="Assets\PostProcessing\Editor Resources\Monitors\WaveformCompute.compute" />
      <None Include="Assets\ProCore\ProBuilder\Shader\pb_SmoothingPreview.shader" />
+     <None Include="Assets\Other\SineVFX\TranslucentCrystals\Resources\Shaders\Crystal.shader" />
      <None Include="Assets\Aura\Shaders\Includes\Common.cginc" />
  <Reference Include="Facebook.Unity.Settings">
  <HintPath>C:/Users/sande/OneDrive/Documenten/GitHub/BackToTheArcade/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
@@ -414,10 +471,6 @@
  <Reference Include="UnityEngine.StandardEvents">
  <HintPath>C:/Users/sande/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.10/UnityEngine.StandardEvents.dll</HintPath>
  </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{DF70B159-A5B2-859A-0ABD-C4296B7F5469}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -64,6 +64,8 @@
      <Compile Include="Assets\Aura\Editor\Helpers\MeshHelpers.cs" />
      <Compile Include="Assets\Aura\Editor\Helpers\PreviewRenderUtilityHelpers.cs" />
      <Compile Include="Assets\Aura\Editor\Statics\GuiStyles.cs" />
+     <Compile Include="Assets\Editor\Instant Screenshot\ScreenshotTaker.cs" />
+     <Compile Include="Assets\Other\Standard Assets\Editor\CrossPlatformInput\CrossPlatformInputInitialize.cs" />
      <Compile Include="Assets\PostProcessing\Editor\Attributes\PostProcessingModelEditorAttribute.cs" />
      <Compile Include="Assets\PostProcessing\Editor\Models\AmbientOcclusionModelEditor.cs" />
      <Compile Include="Assets\PostProcessing\Editor\Models\AntialiasingModelEditor.cs" />
@@ -470,12 +472,8 @@
  </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{DF70B159-A5B2-859A-0ABD-C4296B7F5469}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
     <ProjectReference Include="Assembly-CSharp.csproj">
       <Project>{F31CACA6-F838-C134-DDCB-3C70AA7F12A3}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
-    <ProjectReference Include="Assembly-CSharp-Editor-firstpass.csproj">
-      <Project>{FDDC3650-A449-44AA-4FB2-06721B235D9B}</Project>      <Name>Assembly-CSharp-Editor-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
