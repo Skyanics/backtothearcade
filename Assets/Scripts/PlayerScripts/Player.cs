@@ -41,7 +41,7 @@ public class Player : MonoBehaviour
         moveVector = Vector3.zero;
         moveVector.x = Input.GetAxis("Horizontal") * speed;
 
-        if (Input.GetAxis("Horizontal") >= 1 || Input.GetAxis("Horizontal") <= -1)
+        if (Input.GetAxis("Horizontal") != 0)
         {
             anim.SetBool("isRunning", true);
         }
@@ -69,7 +69,7 @@ public class Player : MonoBehaviour
             PlayerAttack();
         }
 
-        if (Input.GetKey(KeyCode.Q) || Input.GetButtonUp("Fire1") && playerStats.curMana == playerStats.maxMana)
+        if (Input.GetKey(KeyCode.Q) || Input.GetButton("Fire1") && playerStats.curMana == playerStats.maxMana)
         {
             attackCharge += Time.deltaTime;
         }
@@ -143,14 +143,16 @@ public class Player : MonoBehaviour
             partrot.z = -15;
         }
 
-        if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow) || Input.GetAxis("Horizontal") <= -1)
+ 
+
+        if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow) || Input.GetAxis("Horizontal") <= -0.01f)
         {
             rot = Quaternion.LookRotation(Vector3.left);
             
             
         }
 
-        if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow) || Input.GetAxis("Horizontal") >= 1)
+        if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow) || Input.GetAxis("Horizontal") >= 0.01f)
         {
             rot = Quaternion.LookRotation(Vector3.right);
         }
