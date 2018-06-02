@@ -351,7 +351,6 @@
     <Compile Include="Assets\Aura\Enums\VolumetricTextureWrapModeEnum.cs" />
     <Compile Include="Assets\Aura\Enums\VolumeTypeEnum.cs" />
     <Compile Include="Assets\Aura\Examples\Sponza\Fireball\Fireball.cs" />
-    <Compile Include="Assets\Aura\Examples\Sponza\Scripts\AutoMoveAndRotate.cs" />
     <Compile Include="Assets\Aura\Examples\Sponza\Scripts\DebugFps.cs" />
     <Compile Include="Assets\Aura\Examples\Sponza\Scripts\FreeCamera.cs" />
     <Compile Include="Assets\Aura\Examples\Sponza\Scripts\LightFlicker.cs" />
@@ -417,6 +416,7 @@
     <Compile Include="Assets\Other\Standard Assets\Utility\ActivateTrigger.cs" />
     <Compile Include="Assets\Other\Standard Assets\Utility\AlphaButtonClickMask.cs" />
     <Compile Include="Assets\Other\Standard Assets\Utility\AutoMobileShaderSwitch.cs" />
+    <Compile Include="Assets\Other\Standard Assets\Utility\AutoMoveAndRotate.cs" />
     <Compile Include="Assets\Other\Standard Assets\Utility\CameraRefocus.cs" />
     <Compile Include="Assets\Other\Standard Assets\Utility\CurveControlledBob.cs" />
     <Compile Include="Assets\Other\Standard Assets\Utility\DragRigidbody.cs" />
@@ -437,6 +437,8 @@
     <Compile Include="Assets\Other\Standard Assets\Utility\TimedObjectDestructor.cs" />
     <Compile Include="Assets\Other\Standard Assets\Utility\WaypointCircuit.cs" />
     <Compile Include="Assets\Other\Standard Assets\Utility\WaypointProgressTracker.cs" />
+    <Compile Include="Assets\PedestalScript.cs" />
+    <Compile Include="Assets\PlacementTriggerScript.cs" />
     <Compile Include="Assets\PostProcessing\Runtime\Attributes\GetSetAttribute.cs" />
     <Compile Include="Assets\PostProcessing\Runtime\Attributes\MinAttribute.cs" />
     <Compile Include="Assets\PostProcessing\Runtime\Attributes\TrackballAttribute.cs" />

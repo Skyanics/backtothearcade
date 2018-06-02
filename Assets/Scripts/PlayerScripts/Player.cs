@@ -50,18 +50,6 @@ public class Player : MonoBehaviour
             anim.SetBool("isRunning", false);
         }
 
-        // AUTOMATE THIS LATER
-        if (Input.GetKey(KeyCode.E) || Input.GetButtonDown("Fire2"))
-        {
-            anim.SetBool("isPushing", true);
-        }
-
-        else
-        {
-            anim.SetBool("isPushing", false);
-        }
-        // END
-
         if (Input.GetKeyDown(KeyCode.Q) || Input.GetButtonUp("Fire1"))
         {
             anim.SetBool("isAttacking", true);

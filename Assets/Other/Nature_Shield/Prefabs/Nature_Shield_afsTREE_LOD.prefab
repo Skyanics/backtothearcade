@@ -10,7 +10,6 @@ GameObject:
   - component: {fileID: 417826}
   - component: {fileID: 3330154}
   - component: {fileID: 2371888}
-  - component: {fileID: 6479176}
   - component: {fileID: 19305790}
   m_Layer: 0
   m_Name: Nature_Shield_afsTREE_LOD4
@@ -29,7 +28,6 @@ GameObject:
   - component: {fileID: 489708}
   - component: {fileID: 3363406}
   - component: {fileID: 2325622}
-  - component: {fileID: 6450748}
   - component: {fileID: 19343620}
   m_Layer: 0
   m_Name: Nature_Shield_afsTREE_LOD1
@@ -64,7 +62,6 @@ GameObject:
   - component: {fileID: 416312}
   - component: {fileID: 3354726}
   - component: {fileID: 2320472}
-  - component: {fileID: 6419742}
   - component: {fileID: 19383578}
   m_Layer: 0
   m_Name: Nature_Shield_afsTREE_LOD0
@@ -83,7 +80,6 @@ GameObject:
   - component: {fileID: 454776}
   - component: {fileID: 3373490}
   - component: {fileID: 2332974}
-  - component: {fileID: 6483510}
   - component: {fileID: 19311020}
   m_Layer: 0
   m_Name: Nature_Shield_afsTREE_LOD2
@@ -102,7 +98,6 @@ GameObject:
   - component: {fileID: 498790}
   - component: {fileID: 3304486}
   - component: {fileID: 2388254}
-  - component: {fileID: 6415106}
   - component: {fileID: 19304842}
   m_Layer: 0
   m_Name: Nature_Shield_afsTREE_LOD3
@@ -118,7 +113,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 143486}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.39, y: -0, z: -0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 427308}
@@ -144,8 +139,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 143468}
   m_LocalRotation: {x: 0.17493884, y: 0.37445363, z: -0.07238571, w: 0.9077121}
-  m_LocalPosition: {x: -1.86, y: 2.09, z: -0.91}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 33.406227, y: 3.9811711, z: -4.3756433}
+  m_LocalScale: {x: 3.8008375, y: 3.8008392, z: 3.8008385}
   m_Children:
   - {fileID: 417826}
   - {fileID: 498790}
@@ -404,76 +399,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 174428}
   m_Mesh: {fileID: 4300000, guid: cf6e4e55cd5f32d4795c2c34411d78af, type: 2}
---- !u!64 &6415106
-MeshCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 182640}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 4300000, guid: 62f6e5410709ac341ad25c25c043fe8f, type: 3}
---- !u!64 &6419742
-MeshCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 143486}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 4300000, guid: 62f6e5410709ac341ad25c25c043fe8f, type: 3}
---- !u!64 &6450748
-MeshCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 120414}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 4300000, guid: 62f6e5410709ac341ad25c25c043fe8f, type: 3}
---- !u!64 &6479176
-MeshCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 120206}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 4300000, guid: 62f6e5410709ac341ad25c25c043fe8f, type: 3}
---- !u!64 &6483510
-MeshCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 174428}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 4300000, guid: 62f6e5410709ac341ad25c25c043fe8f, type: 3}
 --- !u!193 &19304842
 Tree:
   m_ObjectHideFlags: 1
