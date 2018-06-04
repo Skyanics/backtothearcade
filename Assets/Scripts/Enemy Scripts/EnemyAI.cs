@@ -40,6 +40,7 @@ public class EnemyAI : MonoBehaviour
     //Player Script
     public PlayerStatsMono playerStats;
     public bool isAttacking;
+    public GameObject playerObj;
 
     //raycasting
     public float maxRayDistance = 25;
@@ -66,8 +67,8 @@ public class EnemyAI : MonoBehaviour
             enemycurrentHealth = 100;
             enemyAtk = 15;
             MaxChaseDist = 10;
-            MaxAttackDist = 6;
-            MinDist = 5;
+            MaxAttackDist = 4;
+            MinDist = 2;
             name = "Tainted Rat";
             // enemyMesh.transform.GetChild(1).gameObject.SetActive(true);
         }
@@ -78,8 +79,8 @@ public class EnemyAI : MonoBehaviour
             enemycurrentHealth = 150;
             enemyAtk = 20;
             MaxChaseDist = 10;
-            MaxAttackDist = 6;
-            MinDist = 5;
+            MaxAttackDist = 4;
+            MinDist = 2;
             name = "Corrupted Rat";
             //  enemyMesh.transform.GetChild(0).gameObject.SetActive(true);
         }
@@ -186,10 +187,13 @@ public class EnemyAI : MonoBehaviour
         {
             while (playerStats.curHealth > 0 && Vector3.Distance(transform.position, player.position) <= MaxAttackDist)
             {
-            Debug.Log("attack");
                 isAttacking = true;
                 playerStats.curHealth -= enemyAtk;
                 playerStats.healthSlider.fillAmount -= (float)enemyAtk / 100;
+                playerObj.GetComponent<Renderer>().material.SetColor("_Color", Color.red);
+                yield return new WaitForSeconds(0.5f);
+                playerObj.GetComponent<Renderer>().material.SetColor("_Color", Color.white);
+                 
                 yield return new WaitForSeconds(2);
 
             }

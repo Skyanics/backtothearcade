@@ -5,12 +5,25 @@ using UnityEngine;
 public class DeathWall : MonoBehaviour {
 
 	public GameObject spawnpos;
+    private GameObject player;
+    public Animator anim;
  
 	void OnTriggerEnter(Collider other)
 	{
 		if(other.tag == "Player")
 		{
-			other.gameObject.transform.position = spawnpos.transform.position;
+            player = other.transform.gameObject;
+            StartCoroutine(drownSequence());
+     
+			
 		}
 	}
+
+    IEnumerator drownSequence()
+    {
+        anim.SetBool("isDrowning", true);
+        yield return new WaitForSeconds(2);
+        anim.SetBool("isDrowning", false);
+        player.transform.position = spawnpos.transform.position;
+    }
 }

@@ -8,10 +8,15 @@ public class PedestalScript : MonoBehaviour {
 
     void OnTriggerEnter(Collider other)
     {
-        
-        if (other.tag == "Player" && anim.GetBool("isPushing") == false)
+
+        if (other.tag == "Player" && anim.GetBool("isPushing") == false && Input.GetAxis("Horizontal") >= 0.1f || Input.GetAxis("Horizontal") <= -0.1f)
         {
             anim.SetBool("isPushing", true);
+        }
+
+        else
+        {
+            anim.SetBool("isPushing", false);
         }
     }
 

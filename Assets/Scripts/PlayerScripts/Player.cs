@@ -75,6 +75,7 @@ public class Player : MonoBehaviour
         {
             attackCharge = 0;
             playerLight.intensity = Mathf.Lerp(5f, 1f, 5f);
+            anim.SetBool("isSpecialAttack", false);
         }
 
 
@@ -184,6 +185,8 @@ public class Player : MonoBehaviour
             {
                 Debug.DrawRay(transform.position, Vector3.left, Color.red);
                 hit.transform.GetComponent<EnemyAI>().enemycurrentHealth -= playerDamage;
+                Vector3 pushBackAmount = new Vector3(1, 0.5f, 0);
+                hit.transform.position = Vector3.Lerp(hit.transform.position, hit.transform.position + pushBackAmount, 0.5f);
             }
         }
     }

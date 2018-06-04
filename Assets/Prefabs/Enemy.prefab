@@ -125,6 +125,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4904412299612628}
   - component: {fileID: 33864586356552016}
+  - component: {fileID: 54332349091396658}
   - component: {fileID: 136610296330744832}
   - component: {fileID: 23860140611369728}
   - component: {fileID: 114249514684353838}
@@ -986,7 +987,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1267912425409168}
   m_LocalRotation: {x: -0, y: -0.70707625, z: -0, w: 0.70713735}
-  m_LocalPosition: {x: 49.676582, y: 7.13, z: -6.9}
+  m_LocalPosition: {x: 114.03, y: 7.38, z: -6.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 224198376814563302}
@@ -1145,6 +1146,21 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1267912425409168}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!54 &54332349091396658
+Rigidbody:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1267912425409168}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!95 &95508849551579244
 Animator:
   serializedVersion: 3
@@ -1216,22 +1232,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3cb950194b861b644840469d4b5cbf13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isRegular: 1
-  isHeavy: 0
+  isRegular: 0
+  isHeavy: 1
   enemyHealth: 100
   enemycurrentHealth: 100
   healthbar: {fileID: 114439738809861740}
   enemyAtk: 15
   name: Rat Knight
-  points:
-  - {fileID: 0}
-  - {fileID: 0}
+  points: []
   player: {fileID: 0}
   MaxChaseDist: 10
   MaxAttackDist: 6
   MinDist: 5
   playerStats: {fileID: 0}
   isAttacking: 0
+  playerObj: {fileID: 0}
   maxRayDistance: 25
   playerSighted: 0
   curDirection: {x: 0, y: 0, z: 0}
@@ -1561,7 +1576,7 @@ RectTransform:
   m_GameObject: {fileID: 1760675283575188}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.8699, y: 1, z: 1}
+  m_LocalScale: {x: 1.8699023, y: 1, z: 1}
   m_Children:
   - {fileID: 224342282362175856}
   m_Father: {fileID: 224198376814563302}
