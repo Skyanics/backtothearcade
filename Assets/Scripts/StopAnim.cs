@@ -5,7 +5,6 @@ using UnityEngine;
 public class StopAnim : MonoBehaviour {
 
     public Animator anim;
-    public Light playerLight;
     public ParticleSystem particle;
 
     void Effect()
