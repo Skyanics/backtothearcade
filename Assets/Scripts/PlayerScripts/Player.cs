@@ -7,7 +7,7 @@ public class Player : MonoBehaviour
     private CharacterController controller;
     public PlayerStatsMono playerStats;
     public float speed = 5.0f;
-    private float verticalVelocity;
+    public float verticalVelocity;
     public float Gravity;
     public float jumpForce = 10.0f;
     public bool isPulling;
@@ -96,7 +96,6 @@ public class Player : MonoBehaviour
             {
                 anim.SetBool("isGrounded", false);
                 anim.SetBool("isJumping", true);
-                verticalVelocity = jumpForce;
             }
         }
 
