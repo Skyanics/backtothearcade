@@ -1,7 +1,7 @@
 // Shader created with Shader Forge v1.38 
 // Shader Forge (c) Freya Holmer - http://www.acegikmo.com/shaderforge/
 // Note: Manually altering this data may prevent you from opening it in Shader Forge
-/*SF_DATA;ver:1.38;sub:START;pass:START;ps:flbk:,iptp:0,cusa:False,bamd:0,cgin:,lico:1,lgpr:1,limd:1,spmd:1,trmd:0,grmd:0,uamb:True,mssp:True,bkdf:False,hqlp:False,rprd:False,enco:False,rmgx:True,imps:True,rpth:0,vtps:0,hqsc:True,nrmq:1,nrsp:0,vomd:0,spxs:False,tesm:0,olmd:1,culm:0,bsrc:3,bdst:7,dpts:2,wrdp:False,dith:0,atcv:False,rfrpo:True,rfrpn:Refraction,coma:15,ufog:True,aust:True,igpj:True,qofs:0,qpre:3,rntp:2,fgom:False,fgoc:False,fgod:False,fgor:False,fgmd:0,fgcr:0.5,fgcg:0.5,fgcb:0.5,fgca:1,fgde:0.01,fgrn:0,fgrf:300,stcl:False,atwp:False,stva:128,stmr:255,stmw:255,stcp:6,stps:0,stfa:0,stfz:0,ofsf:0,ofsu:0,f2p0:False,fnsp:False,fnfb:False,fsmp:False;n:type:ShaderForge.SFN_Final,id:4013,x:32880,y:32800,varname:node_4013,prsc:2|diff-4204-RGB,emission-2937-OUT,lwrap-8237-RGB,alpha-4204-A;n:type:ShaderForge.SFN_Tex2d,id:4204,x:31982,y:32772,varname:node_4204,prsc:2,tex:6fdf810f1481876409deb2dd857dc785,ntxv:0,isnm:False|TEX-6160-TEX;n:type:ShaderForge.SFN_Tex2d,id:384,x:31982,y:32964,varname:node_384,prsc:2,tex:6fdf810f1481876409deb2dd857dc785,ntxv:0,isnm:False|TEX-6160-TEX;n:type:ShaderForge.SFN_Fresnel,id:6610,x:31982,y:33135,varname:node_6610,prsc:2|EXP-9195-OUT;n:type:ShaderForge.SFN_Lerp,id:8709,x:32245,y:33051,varname:node_8709,prsc:2|A-384-RGB,B-6610-OUT,T-9195-OUT;n:type:ShaderForge.SFN_Slider,id:9195,x:31520,y:33288,ptovrint:False,ptlb:Emission Amount (Fresnel),ptin:_EmissionAmountFresnel,varname:node_9195,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,min:0,cur:0.8632995,max:1;n:type:ShaderForge.SFN_Multiply,id:3493,x:32422,y:33051,varname:node_3493,prsc:2|A-384-RGB,B-8709-OUT;n:type:ShaderForge.SFN_Tex2dAsset,id:6160,x:31662,y:32900,ptovrint:False,ptlb:node_6160,ptin:_node_6160,varname:node_6160,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,tex:6fdf810f1481876409deb2dd857dc785,ntxv:0,isnm:False;n:type:ShaderForge.SFN_Color,id:7481,x:32028,y:33381,ptovrint:False,ptlb:Color Combination,ptin:_ColorCombination,varname:node_7481,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,c1:1,c2:0,c3:0,c4:1;n:type:ShaderForge.SFN_Multiply,id:2937,x:32498,y:33265,varname:node_2937,prsc:2|A-3493-OUT,B-3877-OUT;n:type:ShaderForge.SFN_Color,id:4032,x:32028,y:33580,ptovrint:False,ptlb:Second Color,ptin:_SecondColor,varname:node_4032,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,c1:0.02789795,c2:0.03424708,c3:0.9485294,c4:1;n:type:ShaderForge.SFN_Lerp,id:3877,x:32242,y:33500,varname:node_3877,prsc:2|A-7481-RGB,B-4032-RGB,T-9195-OUT;n:type:ShaderForge.SFN_LightColor,id:8237,x:32532,y:32884,varname:node_8237,prsc:2;proporder:9195-6160-7481-4032;pass:END;sub:END;*/
+/*SF_DATA;ver:1.38;sub:START;pass:START;ps:flbk:,iptp:0,cusa:False,bamd:0,cgin:,lico:1,lgpr:1,limd:1,spmd:1,trmd:0,grmd:0,uamb:True,mssp:True,bkdf:False,hqlp:False,rprd:False,enco:False,rmgx:True,imps:True,rpth:0,vtps:0,hqsc:True,nrmq:1,nrsp:0,vomd:0,spxs:False,tesm:0,olmd:1,culm:2,bsrc:3,bdst:7,dpts:0,wrdp:True,dith:0,atcv:True,rfrpo:True,rfrpn:Refraction,coma:15,ufog:True,aust:False,igpj:True,qofs:0,qpre:2,rntp:3,fgom:False,fgoc:False,fgod:False,fgor:False,fgmd:0,fgcr:0.5,fgcg:0.5,fgcb:0.5,fgca:1,fgde:0.01,fgrn:0,fgrf:300,stcl:False,atwp:False,stva:128,stmr:255,stmw:255,stcp:6,stps:0,stfa:0,stfz:0,ofsf:0,ofsu:0,f2p0:False,fnsp:False,fnfb:False,fsmp:False;n:type:ShaderForge.SFN_Final,id:4013,x:32880,y:32800,varname:node_4013,prsc:2|diff-4204-RGB,emission-2937-OUT,lwrap-8237-RGB,alpha-4204-A;n:type:ShaderForge.SFN_Tex2d,id:4204,x:31982,y:32772,varname:node_4204,prsc:2,tex:6fdf810f1481876409deb2dd857dc785,ntxv:0,isnm:False|TEX-6160-TEX;n:type:ShaderForge.SFN_Tex2d,id:384,x:31982,y:32964,varname:node_384,prsc:2,tex:6fdf810f1481876409deb2dd857dc785,ntxv:0,isnm:False|TEX-6160-TEX;n:type:ShaderForge.SFN_Fresnel,id:6610,x:31982,y:33135,varname:node_6610,prsc:2|EXP-9195-OUT;n:type:ShaderForge.SFN_Lerp,id:8709,x:32245,y:33051,varname:node_8709,prsc:2|A-384-RGB,B-6610-OUT,T-9195-OUT;n:type:ShaderForge.SFN_Slider,id:9195,x:31520,y:33288,ptovrint:False,ptlb:Emission Amount (Fresnel),ptin:_EmissionAmountFresnel,varname:node_9195,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,min:0,cur:0.8632995,max:1;n:type:ShaderForge.SFN_Multiply,id:3493,x:32422,y:33051,varname:node_3493,prsc:2|A-384-RGB,B-8709-OUT;n:type:ShaderForge.SFN_Tex2dAsset,id:6160,x:31662,y:32900,ptovrint:False,ptlb:node_6160,ptin:_node_6160,varname:node_6160,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,tex:6fdf810f1481876409deb2dd857dc785,ntxv:0,isnm:False;n:type:ShaderForge.SFN_Color,id:7481,x:32028,y:33381,ptovrint:False,ptlb:Color Combination,ptin:_ColorCombination,varname:node_7481,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,c1:1,c2:0,c3:0,c4:1;n:type:ShaderForge.SFN_Multiply,id:2937,x:32498,y:33265,varname:node_2937,prsc:2|A-3493-OUT,B-3877-OUT;n:type:ShaderForge.SFN_Color,id:4032,x:32028,y:33580,ptovrint:False,ptlb:Second Color,ptin:_SecondColor,varname:node_4032,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,c1:0.02789795,c2:0.03424708,c3:0.9485294,c4:1;n:type:ShaderForge.SFN_Lerp,id:3877,x:32242,y:33500,varname:node_3877,prsc:2|A-7481-RGB,B-4032-RGB,T-9195-OUT;n:type:ShaderForge.SFN_LightColor,id:8237,x:32532,y:32884,varname:node_8237,prsc:2;proporder:9195-6160-7481-4032;pass:END;sub:END;*/
 
 Shader "Shader Forge/GlowingLeaf" {
     Properties {
@@ -14,8 +14,8 @@ Shader "Shader Forge/GlowingLeaf" {
     SubShader {
         Tags {
             "IgnoreProjector"="True"
-            "Queue"="Transparent"
-            "RenderType"="Transparent"
+            "Queue"="AlphaTest"
+            "RenderType"="TransparentCutout"
         }
         Pass {
             Name "FORWARD"
@@ -23,8 +23,11 @@ Shader "Shader Forge/GlowingLeaf" {
                 "LightMode"="ForwardBase"
             }
             Blend SrcAlpha OneMinusSrcAlpha
-            ZWrite Off
+            Cull Off
+            ZTest Less
             
+            
+            AlphaToMask On
             CGPROGRAM
             #pragma vertex vert
             #pragma fragment frag
@@ -60,8 +63,11 @@ Shader "Shader Forge/GlowingLeaf" {
                 UNITY_TRANSFER_FOG(o,o.pos);
                 return o;
             }
-            float4 frag(VertexOutput i) : COLOR {
+            float4 frag(VertexOutput i, float facing : VFACE) : COLOR {
+                float isFrontFace = ( facing >= 0 ? 1 : 0 );
+                float faceSign = ( facing >= 0 ? 1 : -1 );
                 i.normalDir = normalize(i.normalDir);
+                i.normalDir *= faceSign;
                 float3 viewDirection = normalize(_WorldSpaceCameraPos.xyz - i.posWorld.xyz);
                 float3 normalDirection = i.normalDir;
                 float3 lightDirection = normalize(_WorldSpaceLightPos0.xyz);
@@ -99,7 +105,9 @@ Shader "Shader Forge/GlowingLeaf" {
                 "LightMode"="ForwardAdd"
             }
             Blend One One
-            ZWrite Off
+            Cull Off
+            ZTest Less
+            
             
             CGPROGRAM
             #pragma vertex vert
@@ -139,8 +147,11 @@ Shader "Shader Forge/GlowingLeaf" {
                 TRANSFER_VERTEX_TO_FRAGMENT(o)
                 return o;
             }
-            float4 frag(VertexOutput i) : COLOR {
+            float4 frag(VertexOutput i, float facing : VFACE) : COLOR {
+                float isFrontFace = ( facing >= 0 ? 1 : 0 );
+                float faceSign = ( facing >= 0 ? 1 : -1 );
                 i.normalDir = normalize(i.normalDir);
+                i.normalDir *= faceSign;
                 float3 viewDirection = normalize(_WorldSpaceCameraPos.xyz - i.posWorld.xyz);
                 float3 normalDirection = i.normalDir;
                 float3 lightDirection = normalize(lerp(_WorldSpaceLightPos0.xyz, _WorldSpaceLightPos0.xyz - i.posWorld.xyz,_WorldSpaceLightPos0.w));
@@ -163,6 +174,43 @@ Shader "Shader Forge/GlowingLeaf" {
                 fixed4 finalRGBA = fixed4(finalColor * node_4204.a,0);
                 UNITY_APPLY_FOG(i.fogCoord, finalRGBA);
                 return finalRGBA;
+            }
+            ENDCG
+        }
+        Pass {
+            Name "ShadowCaster"
+            Tags {
+                "LightMode"="ShadowCaster"
+            }
+            Offset 1, 1
+            Cull Off
+            
+            CGPROGRAM
+            #pragma vertex vert
+            #pragma fragment frag
+            #include "UnityCG.cginc"
+            #include "Lighting.cginc"
+            #pragma fragmentoption ARB_precision_hint_fastest
+            #pragma multi_compile_shadowcaster
+            #pragma multi_compile_fog
+            #pragma only_renderers d3d9 d3d11 glcore gles 
+            #pragma target 3.0
+            struct VertexInput {
+                float4 vertex : POSITION;
+            };
+            struct VertexOutput {
+                V2F_SHADOW_CASTER;
+            };
+            VertexOutput vert (VertexInput v) {
+                VertexOutput o = (VertexOutput)0;
+                o.pos = UnityObjectToClipPos( v.vertex );
+                TRANSFER_SHADOW_CASTER(o)
+                return o;
+            }
+            float4 frag(VertexOutput i, float facing : VFACE) : COLOR {
+                float isFrontFace = ( facing >= 0 ? 1 : 0 );
+                float faceSign = ( facing >= 0 ? 1 : -1 );
+                SHADOW_CASTER_FRAGMENT(i)
             }
             ENDCG
         }
