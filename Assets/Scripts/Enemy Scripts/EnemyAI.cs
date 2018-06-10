@@ -191,10 +191,10 @@ public class EnemyAI : MonoBehaviour
                 playerStats.curHealth -= enemyAtk;
                 playerStats.healthSlider.fillAmount -= (float)enemyAtk / 100;
                 playerObj.GetComponent<Renderer>().material.SetColor("_Color", Color.red);
-                yield return new WaitForSeconds(0.5f);
+                yield return new WaitForSeconds(0.2f);
                 playerObj.GetComponent<Renderer>().material.SetColor("_Color", Color.white);
                  
-                yield return new WaitForSeconds(2);
+                yield return new WaitForSeconds(1.5f);
 
             }
 

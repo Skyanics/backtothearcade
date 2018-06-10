@@ -96,6 +96,7 @@ public class Player : MonoBehaviour
             {
                 anim.SetBool("isGrounded", false);
                 anim.SetBool("isJumping", true);
+                verticalVelocity = jumpForce;
             }
         }
 
@@ -184,7 +185,7 @@ public class Player : MonoBehaviour
             {
                 Debug.DrawRay(transform.position, Vector3.left, Color.red);
                 hit.transform.GetComponent<EnemyAI>().enemycurrentHealth -= playerDamage;
-                Vector3 pushBackAmount = new Vector3(1, 0.5f, 0);
+                Vector3 pushBackAmount = new Vector3(1.5f, 0.5f, 0);
                 hit.transform.position = Vector3.Lerp(hit.transform.position, hit.transform.position + pushBackAmount, 0.5f);
             }
         }

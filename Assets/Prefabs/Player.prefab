@@ -1190,7 +1190,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1619137335691444}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
@@ -1263,8 +1263,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: 95609253307420788}
-  playerLight: {fileID: 108574889729722844}
   particle: {fileID: 198652279246232732}
+  player: {fileID: 0}
 --- !u!114 &114635002971779502
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1303,7 +1303,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerStats: {fileID: 114635002971779502}
-  speed: 4
+  speed: 4.5
+  verticalVelocity: 0
   Gravity: 14
   jumpForce: 10
   isPulling: 0
@@ -1321,7 +1322,7 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.57
+  m_Radius: 0.4
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}

@@ -6,7 +6,6 @@ public class StopAnim : MonoBehaviour {
 
     public Animator anim;
     public ParticleSystem particle;
-    public Player player;
 
     void Effect()
     {
@@ -17,10 +16,5 @@ public class StopAnim : MonoBehaviour {
     {
         anim.SetBool("isSpecialAttack", false);
         
-    }
-
-    void Jump()
-    {
-        player.verticalVelocity = player.jumpForce;
     }
 }
