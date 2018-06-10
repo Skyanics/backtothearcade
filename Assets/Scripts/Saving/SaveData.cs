@@ -12,5 +12,6 @@ public class SaveData
     public Vector3 cameraPos;
     public bool pickUpHealth;
     public bool pickUpMana;
+    public Vector3 spawnpos;
 }
 

@@ -16,6 +16,7 @@ public class Player : MonoBehaviour
     private Quaternion rot;
     private Vector3 moveVector;
     private Vector3 lastMove;
+    public GameObject spawnpos;
 
     public Animator anim;
 
@@ -155,6 +156,21 @@ public class Player : MonoBehaviour
         {
             transform.position = new Vector3(transform.position.x, transform.position.y, -6.9f);
         }
+
+        if (playerStats.curHealth <= 0)
+        {
+            anim.SetBool("Death", true);
+            StartCoroutine(Death()); 
+        }
+    }
+
+    IEnumerator Death()
+    {
+        yield return new WaitForSeconds(5);
+        transform.position = spawnpos.transform.position;
+        playerStats.curHealth = playerStats.maxHealth;
+        anim.SetBool("Death", false);
+        StopCoroutine(Death());
     }
 
     private void OnControllerColliderHit(ControllerColliderHit hit)

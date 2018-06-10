@@ -21,7 +21,8 @@ public class SaveDataPoint : MonoBehaviour {
             light.color = Color.white;
             Renderer rend = sphere.GetComponent<Renderer>();
             rend.material.shader = Shader.Find("Shallow");
-            rend.material.SetColor("_Shallow", Color.white);   
+            rend.material.SetColor("_Shallow", Color.white);
+            player.GetComponent<Player>().spawnpos.transform.position = player.transform.position;
         }
     }
 
@@ -43,4 +44,6 @@ public class SaveDataPoint : MonoBehaviour {
             saveText.text = " ";
         }
     }
+
+    
 }

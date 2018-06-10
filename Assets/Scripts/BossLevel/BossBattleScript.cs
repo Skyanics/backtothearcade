@@ -19,6 +19,7 @@ public class BossBattleScript : MonoBehaviour {
     public Image healthbar;
     public GameObject body;
     public Color finalcolor;
+    public GameObject health;
 
     //rocks
     public Transform rockSpawn1;
@@ -53,6 +54,7 @@ public class BossBattleScript : MonoBehaviour {
     {
         if (Other.tag == "Player")
         {
+            health.SetActive(true);
             StartCoroutine(BossBattle());
             playerEnteredArea = true;
         }
@@ -85,9 +87,21 @@ public class BossBattleScript : MonoBehaviour {
                 anim.SetBool("biteAttack", false);
             }
 
+            if (BossHealth <= 0)
+            {
+                anim.SetBool("DeathAnim", true);
+                StopBossBattle();
+                break;
+                
+            }
             
         }
 
+    }
+
+    void StopBossBattle()
+    {
+        StopCoroutine(BossBattle());
     }
 
 
