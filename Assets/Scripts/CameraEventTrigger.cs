@@ -9,6 +9,9 @@ public class CameraEventTrigger : MonoBehaviour {
     public bool fixDoF;
     public PostProcessingProfile postProf;
 
+    public bool dragon;
+    public AudioSource aud;
+
     void Start()
     {
         postProf = camera.GetComponent<PostProcessingBehaviour>().profile;
@@ -18,7 +21,12 @@ public class CameraEventTrigger : MonoBehaviour {
     {
         if (other.tag == "Player")
         {
-            if(fixDoF = true)
+            if (dragon)
+            {
+                aud.PlayOneShot(aud.clip);
+            }
+
+            if(fixDoF == true)
             {
                 var dof = postProf.depthOfField.settings;
                 dof.focusDistance = 30;
@@ -32,7 +40,7 @@ public class CameraEventTrigger : MonoBehaviour {
     {
         if (other.tag == "Player")
         {
-            if (fixDoF = true)
+            if (fixDoF == true)
             {
                 var dof = postProf.depthOfField.settings;
                 dof.focusDistance = 13;
