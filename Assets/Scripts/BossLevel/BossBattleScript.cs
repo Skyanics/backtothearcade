@@ -30,6 +30,12 @@ public class BossBattleScript : MonoBehaviour {
     public GameObject projectile1;
     public GameObject projectile2;
 
+    //Sounds & FX
+    public AudioSource music1;
+    public AudioSource music2;
+    public AudioSource sfx;
+
+
     void Start()
     {
         anim = GetComponent<Animator>();
@@ -50,12 +56,31 @@ public class BossBattleScript : MonoBehaviour {
         }
     }
 
-    void OnTriggerEnter(Collider Other)
+    private void OnTriggerStay(Collider other)
     {
-        if (Other.tag == "Player")
+        if (other.tag == "Player" && music2.volume == 0 && music1.volume == 1)
         {
-            health.SetActive(true);
-            StartCoroutine(BossBattle());
+            StartCoroutine(CrossFade());
+            music2.Play();
+        }
+    }
+
+    IEnumerator CrossFade()
+    {
+        while (music2.volume <= 0.9f)
+        {
+            music1.volume -= Time.deltaTime;
+            music2.volume += Time.deltaTime;
+            yield return new WaitForSeconds(0.1f);
+        }
+    }
+
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "Player")
+        {
+                health.SetActive(true);
+                StartCoroutine(BossBattle());
             playerEnteredArea = true;
         }
     }
