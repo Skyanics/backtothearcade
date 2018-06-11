@@ -28,6 +28,11 @@ public class Player : MonoBehaviour
     private float attackCharge;
     public Light playerLight;
 
+    public AudioSource aud;
+    public AudioClip attack;
+    public AudioClip specialAttack;
+    //public AudioClip death;
+
 
     // Use this for initialization
     void Start()
@@ -54,7 +59,9 @@ public class Player : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Q) || Input.GetButtonUp("Fire1"))
         {
             anim.SetBool("isAttacking", true);
+            aud.PlayOneShot(attack);
             atkParticle.Play();
+
             PlayerAttack();
         }
 
@@ -69,6 +76,7 @@ public class Player : MonoBehaviour
             attackCharge = 0;
             playerStats.curMana -= playerStats.maxMana;
             playerLight.intensity = Mathf.Lerp(1f, 5f, 5f);
+            aud.PlayOneShot(specialAttack);
             anim.SetBool("isSpecialAttack", true);
         }
 
@@ -170,6 +178,7 @@ public class Player : MonoBehaviour
         transform.position = spawnpos.transform.position;
         playerStats.curHealth = playerStats.maxHealth;
         anim.SetBool("Death", false);
+        //aud.PlayOneShot(death);
         StopCoroutine(Death());
     }
 

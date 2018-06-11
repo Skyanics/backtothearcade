@@ -7,6 +7,9 @@ public class PickUpBuff : MonoBehaviour {
     public bool isMana;
     public bool isHealth;
     public PlayerStatsMono stats;
+    public AudioSource aud;
+    public AudioClip mana;
+    public AudioClip health;
 
     private float chargeValue = 25f;
 
@@ -14,16 +17,22 @@ public class PickUpBuff : MonoBehaviour {
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Player" && isMana == true)
+        if (other.tag == "Player" && isMana == true && GetComponent<Renderer>().enabled == true)
         {
             stats.curMana += chargeValue;
-            Destroy(this.gameObject);
+            aud.PlayOneShot(mana);
+            GetComponent<Renderer>().enabled = false;
+            GetComponent<ParticleSystem>().Stop();
+
         }
 
-        if (other.tag == "Player" && isHealth == true)
+        if (other.tag == "Player" && isHealth == true && GetComponent<Renderer>().enabled == true)
         {
             stats.curHealth += stats.maxHealth - stats.curHealth;
-            Destroy(this.gameObject);
+            aud.PlayOneShot(health);
+            GetComponent<Renderer>().enabled = false;
+            GetComponent<ParticleSystem>().Stop();
+
         }
 
     }

@@ -2504,9 +2504,9 @@ Transform:
   - {fileID: 1065213185}
   - {fileID: 1169603326}
   - {fileID: 167940647}
-  - {fileID: 1920882912}
-  - {fileID: 360090398}
   - {fileID: 1447164251}
+  - {fileID: 360090398}
+  - {fileID: 1920882912}
   - {fileID: 2011501529}
   - {fileID: 1145583774}
   - {fileID: 1535488466}
@@ -12756,6 +12756,21 @@ Prefab:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -7.999855
       objectReference: {fileID: 0}
+    - target: {fileID: 114781551649937108, guid: 79d441eb27303a644ad1a87684432199,
+        type: 2}
+      propertyPath: aud
+      value: 
+      objectReference: {fileID: 1817673611}
+    - target: {fileID: 114781551649937108, guid: 79d441eb27303a644ad1a87684432199,
+        type: 2}
+      propertyPath: attack
+      value: 
+      objectReference: {fileID: 8300000, guid: ced6046bfa7977d4aa5473235d6c8dae, type: 3}
+    - target: {fileID: 114781551649937108, guid: 79d441eb27303a644ad1a87684432199,
+        type: 2}
+      propertyPath: specialAttack
+      value: 
+      objectReference: {fileID: 8300000, guid: cef1fcd2087f9bb4ebe6e1873da92a29, type: 3}
     m_RemovedComponents:
     - {fileID: 136628130695032722, guid: 79d441eb27303a644ad1a87684432199, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 79d441eb27303a644ad1a87684432199, type: 2}
@@ -39992,7 +40007,7 @@ Prefab:
       objectReference: {fileID: 2100000, guid: dfdd2ee3cb509f84a881e01e508b583a, type: 2}
     - target: {fileID: 4563065418830716, guid: 72dfdf9b3f181ed45afb65fcb774cf71, type: 2}
       propertyPath: m_RootOrder
-      value: 42
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 33436205048633494, guid: 72dfdf9b3f181ed45afb65fcb774cf71,
         type: 2}
@@ -43855,7 +43870,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 96186707}
-  m_RootOrder: 40
+  m_RootOrder: 42
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1925317130 stripped
 Transform:
@@ -45647,9 +45662,14 @@ Prefab:
       propertyPath: stats
       value: 
       objectReference: {fileID: 1817673606}
-    - target: {fileID: 65164697532839920, guid: f5ebd9a7b8999c74896581582fd297ae,
+    - target: {fileID: 82502498838353814, guid: f5ebd9a7b8999c74896581582fd297ae,
         type: 2}
-      propertyPath: m_IsTrigger
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 5ade67a3c692b3d4f8203459696d1d6e, type: 3}
+    - target: {fileID: 82502498838353814, guid: f5ebd9a7b8999c74896581582fd297ae,
+        type: 2}
+      propertyPath: m_PlayOnAwake
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
