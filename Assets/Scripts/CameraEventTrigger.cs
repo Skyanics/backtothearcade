@@ -1,11 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.PostProcessing;
 
 public class CameraEventTrigger : MonoBehaviour {
 
     public GameObject camera;
+<<<<<<< HEAD
     public bool fixDoF;
     public PostProcessingProfile postProf;
 
@@ -16,11 +16,14 @@ public class CameraEventTrigger : MonoBehaviour {
     {
         postProf = camera.GetComponent<PostProcessingBehaviour>().profile;
     }
+=======
+>>>>>>> parent of e4061298... Stuff enzo kek
 
     void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Player")
         {
+<<<<<<< HEAD
             if (dragon)
             {
                 aud.PlayOneShot(aud.clip);
@@ -32,6 +35,8 @@ public class CameraEventTrigger : MonoBehaviour {
                 dof.focusDistance = 30;
             }
             
+=======
+>>>>>>> parent of e4061298... Stuff enzo kek
             camera.GetComponent<CameraFollow>().isZoomed = true;
         }
     }
@@ -40,11 +45,14 @@ public class CameraEventTrigger : MonoBehaviour {
     {
         if (other.tag == "Player")
         {
+<<<<<<< HEAD
             if (fixDoF == true)
             {
                 var dof = postProf.depthOfField.settings;
                 dof.focusDistance = 13;
             }
+=======
+>>>>>>> parent of e4061298... Stuff enzo kek
             camera.GetComponent<CameraFollow>().isZoomed = false;
         }
     }

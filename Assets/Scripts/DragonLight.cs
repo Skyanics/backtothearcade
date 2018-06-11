@@ -11,7 +11,7 @@ public class DragonLight : MonoBehaviour {
     {
         if (camera.GetComponent<CameraFollow>().isZoomed == true)
         {
-            light.intensity = 1.302f;
+            light.intensity = 2.31f;
         }
 
         else

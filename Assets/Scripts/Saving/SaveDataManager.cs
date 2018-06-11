@@ -28,7 +28,6 @@ public class SaveDataManager : MonoBehaviour {
 			saveData.manaAttackCharge = playerStats.manaAttackCharge;
 			saveData.pickUpHealth = playerStats.pickUpHealth;
 			saveData.pickUpMana = playerStats.pickUpMana;
-            saveData.spawnpos = playerStats.playerPos;
 
 			string jsonData = JsonUtility.ToJson(saveData, true);
         	File.WriteAllText(Application.persistentDataPath + "/RiyahTheGameSaveData.json", jsonData);
@@ -47,7 +46,6 @@ public class SaveDataManager : MonoBehaviour {
 		playerStats.manaAttackCharge = saveData.manaAttackCharge;
 		playerStats.pickUpHealth = saveData.pickUpHealth;
 		playerStats.pickUpMana = saveData.pickUpMana;
-        player.GetComponent<Player>().spawnpos.transform.position = saveData.spawnpos;
 
         player.transform.position = playerStats.playerPos;
         camera.transform.position = playerStats.cameraPos;

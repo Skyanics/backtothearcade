@@ -16,7 +16,6 @@ public class Player : MonoBehaviour
     private Quaternion rot;
     private Vector3 moveVector;
     private Vector3 lastMove;
-    public GameObject spawnpos;
 
     public Animator anim;
 
@@ -164,6 +163,7 @@ public class Player : MonoBehaviour
         {
             transform.position = new Vector3(transform.position.x, transform.position.y, -6.9f);
         }
+<<<<<<< HEAD
 
         if (playerStats.curHealth <= 0)
         {
@@ -180,6 +180,8 @@ public class Player : MonoBehaviour
         anim.SetBool("Death", false);
         //aud.PlayOneShot(death);
         StopCoroutine(Death());
+=======
+>>>>>>> parent of e4061298... Stuff enzo kek
     }
 
     private void OnControllerColliderHit(ControllerColliderHit hit)

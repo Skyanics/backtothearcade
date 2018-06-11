@@ -19,11 +19,19 @@ MonoBehaviour:
     x: 0
     y: 30
     width: 1904
+<<<<<<< HEAD
     height: 931
   m_MinSize: {x: 883, y: 492}
   m_MaxSize: {x: 16008, y: 14042}
   vertical: 0
   controlID: 6160
+=======
+    height: 941
+  m_MinSize: {x: 881, y: 471}
+  m_MaxSize: {x: 16006, y: 14021}
+  vertical: 0
+  controlID: 4151
+>>>>>>> parent of e4061298... Stuff enzo kek
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -46,23 +54,37 @@ MonoBehaviour:
   m_DepthBufferBits: 32
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 1254
     y: 100
     width: 205
     height: 527
+=======
+    x: 895
+    y: 100
+    width: 547
+    height: 533
+>>>>>>> parent of e4061298... Stuff enzo kek
   m_PersistentViewDataDictionary: {fileID: 0}
   m_MaximizeOnPlay: 1
   m_Gizmos: 0
-  m_Stats: 0
-  m_SelectedSizes: 05000000000000000000000000000000000000000000000000000000000000000000000000000000
+  m_Stats: 1
+  m_SelectedSizes: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
   m_TargetDisplay: 0
   m_ZoomArea:
     m_HRangeLocked: 0
     m_VRangeLocked: 0
+<<<<<<< HEAD
     m_HBaseRangeMin: -102.5
     m_HBaseRangeMax: 102.5
     m_VBaseRangeMin: -57.65625
     m_VBaseRangeMax: 57.65625
+=======
+    m_HBaseRangeMin: -273.5
+    m_HBaseRangeMax: 273.5
+    m_VBaseRangeMin: -258
+    m_VBaseRangeMax: 258
+>>>>>>> parent of e4061298... Stuff enzo kek
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -79,25 +101,43 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 17
+<<<<<<< HEAD
       width: 205
       height: 510
     m_Scale: {x: 1, y: 1}
     m_Translation: {x: 102.5, y: 255}
+=======
+      width: 547
+      height: 516
+    m_Scale: {x: 1, y: 1}
+    m_Translation: {x: 273.5, y: 258}
+>>>>>>> parent of e4061298... Stuff enzo kek
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
+<<<<<<< HEAD
       x: -102.5
       y: -255
       width: 205
       height: 510
+=======
+      x: -273.5
+      y: -258
+      width: 547
+      height: 516
+>>>>>>> parent of e4061298... Stuff enzo kek
     m_MinimalGUI: 1
   m_defaultScale: 1
   m_TargetTexture: {fileID: 0}
   m_CurrentColorSpace: 0
+<<<<<<< HEAD
   m_LastWindowPixelSize: {x: 205, y: 527}
+=======
+  m_LastWindowPixelSize: {x: 547, y: 533}
+>>>>>>> parent of e4061298... Stuff enzo kek
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000100000100
@@ -119,12 +159,21 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 1451
     height: 931
   m_MinSize: {x: 606, y: 492}
   m_MaxSize: {x: 12006, y: 14042}
   vertical: 1
   controlID: 6161
+=======
+    width: 1436
+    height: 941
+  m_MinSize: {x: 606, y: 471}
+  m_MaxSize: {x: 12006, y: 14021}
+  vertical: 1
+  controlID: 4152
+>>>>>>> parent of e4061298... Stuff enzo kek
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -144,12 +193,21 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 1451
     height: 548
   m_MinSize: {x: 606, y: 221}
   m_MaxSize: {x: 12006, y: 4021}
   vertical: 0
   controlID: 6162
+=======
+    width: 1436
+    height: 554
+  m_MinSize: {x: 606, y: 221}
+  m_MaxSize: {x: 12006, y: 4021}
+  vertical: 0
+  controlID: 4153
+>>>>>>> parent of e4061298... Stuff enzo kek
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -166,8 +224,13 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 202
     height: 548
+=======
+    width: 354
+    height: 554
+>>>>>>> parent of e4061298... Stuff enzo kek
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 6}
@@ -199,6 +262,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 10
     y: 100
+<<<<<<< HEAD
     width: 200
     height: 527
   m_PersistentViewDataDictionary: {fileID: 0}
@@ -207,6 +271,16 @@ MonoBehaviour:
     m_SelectedIDs: 0ee4ffff
     m_LastClickedID: -7154
     m_ExpandedIDs: f2b1ffff22e4ffff96fbffff00000000786100009c610000
+=======
+    width: 352
+    height: 533
+  m_PersistentViewDataDictionary: {fileID: 0}
+  m_TreeViewState:
+    scrollPos: {x: 0, y: 5948}
+    m_SelectedIDs: 06a0ffff
+    m_LastClickedID: -24570
+    m_ExpandedIDs: 5ea0fffff6a4ffff36cdffff46e4ffff9efbffff00000000a45e00003461000058610000b8680000
+>>>>>>> parent of e4061298... Stuff enzo kek
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -243,12 +317,19 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 202
+    x: 354
     y: 0
+<<<<<<< HEAD
     width: 1040
     height: 548
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 4000, y: 4000}
+=======
+    width: 531
+    height: 554
+  m_MinSize: {x: 204, y: 221}
+  m_MaxSize: {x: 4004, y: 4021}
+>>>>>>> parent of e4061298... Stuff enzo kek
   m_ActualView: {fileID: 8}
   m_Panes:
   - {fileID: 8}
@@ -278,6 +359,7 @@ MonoBehaviour:
   m_DepthBufferBits: 32
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 214
     y: 100
     width: 1036
@@ -285,13 +367,28 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SceneLighting: 1
   lastFramingTime: 1281.0117347599278
+=======
+    x: 364
+    y: 100
+    width: 527
+    height: 533
+  m_PersistentViewDataDictionary: {fileID: 0}
+  m_SceneLighting: 1
+  lastFramingTime: 2359.907401373767
+>>>>>>> parent of e4061298... Stuff enzo kek
   m_2DMode: 0
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
+<<<<<<< HEAD
     m_Target: {x: 370.61987, y: -75.506256, z: -1.9233146}
     speed: 2
     m_Value: {x: 370.61987, y: -75.506256, z: -1.9233146}
+=======
+    m_Target: {x: 0.6300005, y: 4.42, z: -1.55}
+    speed: 2
+    m_Value: {x: 0.6300005, y: 4.42, z: -1.55}
+>>>>>>> parent of e4061298... Stuff enzo kek
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -315,6 +412,7 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
+<<<<<<< HEAD
     m_Target: {x: 0.028949333, y: -0.3725071, z: -0.011594686, w: -0.9275094}
     speed: 2
     m_Value: {x: 0.028949223, y: -0.37250566, z: -0.011594642, w: -0.9275059}
@@ -322,6 +420,15 @@ MonoBehaviour:
     m_Target: 36.769115
     speed: 2
     m_Value: 36.769115
+=======
+    m_Target: {x: -0.2190052, y: 0.012295246, z: -0.0027461767, w: -0.9756512}
+    speed: 2
+    m_Value: {x: -0.21900332, y: 0.012295141, z: -0.0027461532, w: -0.97564286}
+  m_Size:
+    m_Target: 7.7120466
+    speed: 2
+    m_Value: 7.7120466
+>>>>>>> parent of e4061298... Stuff enzo kek
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -382,16 +489,22 @@ MonoBehaviour:
   m_DepthBufferBits: 0
   m_Pos:
     serializedVersion: 2
-    x: 212
+    x: 364
     y: 100
+<<<<<<< HEAD
     width: 554
     height: 527
+=======
+    width: 527
+    height: 533
+>>>>>>> parent of e4061298... Stuff enzo kek
   m_PersistentViewDataDictionary: {fileID: 0}
   m_ViewTransforms:
     m_KeySerializationHelper:
     - {fileID: 1107947363055531630, guid: 45651cc9b6a1b534bbd0b933a9048b60, type: 2}
     - {fileID: 1107354297911865840, guid: aaf6c36bfc2abe54ca778f8c6a16818f, type: 2}
     m_ValueSerializationHelper:
+<<<<<<< HEAD
     - e00: 0.6016938
       e01: 0
       e02: 0
@@ -400,6 +513,16 @@ MonoBehaviour:
       e11: 0.6016938
       e12: 0
       e13: 212.81636
+=======
+    - e00: 0.32336664
+      e01: 0
+      e02: 0
+      e03: -16.790627
+      e10: 0
+      e11: 0.32336664
+      e12: 0
+      e13: 267.88037
+>>>>>>> parent of e4061298... Stuff enzo kek
       e20: 0
       e21: 0
       e22: 1
@@ -408,14 +531,14 @@ MonoBehaviour:
       e31: 0
       e32: 0
       e33: 1
-    - e00: 0.73676056
+    - e00: 1
       e01: 0
       e02: 0
-      e03: -290.8757
+      e03: 0
       e10: 0
-      e11: 0.73676056
+      e11: 1
       e12: 0
-      e13: 281.95306
+      e13: 0
       e20: 0
       e21: 0
       e22: 1
@@ -434,7 +557,7 @@ MonoBehaviour:
   m_AutoLiveLink: 1
   m_MiniTool: 0
   m_SerializedLocked: 0
-  m_CurrentEditor: 1
+  m_CurrentEditor: 0
   m_LayerEditor:
     m_SelectedLayerIndex: 0
 --- !u!114 &11
@@ -451,10 +574,17 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 1242
     y: 0
     width: 209
     height: 548
+=======
+    x: 885
+    y: 0
+    width: 551
+    height: 554
+>>>>>>> parent of e4061298... Stuff enzo kek
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 2}
@@ -477,9 +607,15 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
+<<<<<<< HEAD
     y: 548
     width: 1451
     height: 383
+=======
+    y: 554
+    width: 1436
+    height: 387
+>>>>>>> parent of e4061298... Stuff enzo kek
   m_MinSize: {x: 230, y: 250}
   m_MaxSize: {x: 10000, y: 10000}
   m_ActualView: {fileID: 13}
@@ -511,10 +647,17 @@ MonoBehaviour:
   m_DepthBufferBits: 0
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 10
     y: 648
     width: 1449
     height: 362
+=======
+    x: 8
+    y: 654
+    width: 1434
+    height: 366
+>>>>>>> parent of e4061298... Stuff enzo kek
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SearchFilter:
     m_NameFilter: 
@@ -528,19 +671,25 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets
+    - Assets/Art/Models/Animation Controllers
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets
+  - Assets/Art/Models/Animation Controllers
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\sande\OneDrive\Documenten\GitHub\BackToTheArcade
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 95}
+<<<<<<< HEAD
     m_SelectedIDs: 322e0000
     m_LastClickedID: 11826
     m_ExpandedIDs: 00000000322e0000b02e0000e62f0000a4300000a8320000dc320000203300005e330000083400006c340000f2350000043600002c37000058370000e037000066380000ce390000ec390000fa3a00004c3b0000683b0000843b0000b23b0000d43b00000e3c00002a3d0000143e0000243e0000643e0000624000005e4100003e43000058430000804300003e440000284500002e460000c4460000144700005c4700006248000072480000d04800002055000042550000205600005c57000088570000f257000076580000f8580000105900001259000072590000285d0000467c0000487c00004a7c00004c7c00004e7c0000507c0000527c000000ca9a3bffffff7f
+=======
+    m_SelectedIDs: 963b0000
+    m_LastClickedID: 15254
+    m_ExpandedIDs: 00000000322e0000b02e0000e02f00009e300000a2320000d23200001633000054330000fa3300005e340000e0350000f23500001637000042370000ca37000050380000b2390000d0390000de3a0000303b00004c3b0000683b0000963b0000b83b0000f23b0000003d0000e63d0000f63d0000363e0000324000002e4100000c430000264300004c43000008440000f2440000f84500008c460000dc46000022470000284800003848000096480000e054000002550000dc5500001a57000046570000b057000034580000b6580000ce5800002e590000e45c00006c7d00006e7d0000707d0000727d0000747d0000767d0000787d000000ca9a3bffffff7f
+>>>>>>> parent of e4061298... Stuff enzo kek
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -568,7 +717,11 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
+<<<<<<< HEAD
     m_ExpandedIDs: 00000000322e0000b02e0000e62f0000a4300000a8320000dc320000203300005e330000083400006c340000f2350000043600002c37000058370000e037000066380000ce390000ec390000fa3a00004c3b0000683b0000843b0000b23b0000d43b00000e3c00002a3d0000143e0000243e0000643e0000624000005e4100003e43000058430000804300003e440000284500002e460000c4460000144700005c4700006248000072480000d04800002055000042550000205600005c57000088570000f257000076580000f8580000105900001259000072590000285d0000467c0000487c00004a7c00004c7c00004e7c0000507c0000527c000000ca9a3bffffff7f
+=======
+    m_ExpandedIDs: 00000000322e0000b02e0000e02f00009e300000a2320000d23200001633000054330000fa3300005e340000e0350000f23500001637000042370000ca37000050380000b2390000d0390000de3a0000303b00004c3b0000683b0000963b0000b83b0000f23b0000003d0000e63d0000f63d0000363e0000324000002e4100000c430000264300004c43000008440000f2440000f84500008c460000dc46000022470000284800003848000096480000e054000002550000dc5500001a57000046570000b057000034580000b6580000ce5800002e590000e45c00006c7d00006e7d0000707d0000727d0000747d0000767d0000787d000000ca9a3bffffff7f
+>>>>>>> parent of e4061298... Stuff enzo kek
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -593,10 +746,15 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
+<<<<<<< HEAD
     m_SelectedInstanceIDs: 0ee4ffff
     m_LastClickedInstanceID: -7154
+=======
+    m_SelectedInstanceIDs: 06a0ffff
+    m_LastClickedInstanceID: -24570
+>>>>>>> parent of e4061298... Stuff enzo kek
     m_HadKeyboardFocusLastEvent: 0
-    m_ExpandedInstanceIDs: 2c080100c07d000000000000
+    m_ExpandedInstanceIDs: 2c080100c07d0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -612,7 +770,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 12}
+      m_ClientGUIView: {fileID: 0}
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
@@ -645,10 +803,17 @@ MonoBehaviour:
   m_DepthBufferBits: 0
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 10
     y: 648
     width: 1449
     height: 362
+=======
+    x: 8
+    y: 654
+    width: 1434
+    height: 366
+>>>>>>> parent of e4061298... Stuff enzo kek
   m_PersistentViewDataDictionary: {fileID: 0}
 --- !u!114 &15
 MonoBehaviour:
@@ -673,9 +838,15 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 8
+<<<<<<< HEAD
     y: 648
     width: 1449
     height: 362
+=======
+    y: 654
+    width: 1434
+    height: 366
+>>>>>>> parent of e4061298... Stuff enzo kek
   m_PersistentViewDataDictionary: {fileID: 0}
   m_AnimEditor: {fileID: 0}
   m_Locked: 0
@@ -693,10 +864,15 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 1451
+    x: 1436
     y: 0
+<<<<<<< HEAD
     width: 453
     height: 931
+=======
+    width: 468
+    height: 941
+>>>>>>> parent of e4061298... Stuff enzo kek
   m_MinSize: {x: 275, y: 50}
   m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 17}
@@ -729,10 +905,17 @@ MonoBehaviour:
   m_DepthBufferBits: 0
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 1463
     y: 100
     width: 451
     height: 910
+=======
+    x: 1446
+    y: 100
+    width: 466
+    height: 920
+>>>>>>> parent of e4061298... Stuff enzo kek
   m_PersistentViewDataDictionary: {fileID: 0}
   m_ScrollPosition: {x: 0, y: 0}
   m_InspectorMode: 0
@@ -790,9 +973,9 @@ MonoBehaviour:
   m_DepthBufferBits: 0
   m_Pos:
     serializedVersion: 2
-    x: 1461
+    x: 1446
     y: 100
-    width: 451
+    width: 466
     height: 920
   m_PersistentViewDataDictionary: {fileID: 0}
 --- !u!114 &20
